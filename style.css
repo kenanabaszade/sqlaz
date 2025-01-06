@@ -1,26 +1,24 @@
-
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400; /* Normal weight */
-  font-style: normal; 
-  src: url('./sql/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-style: normal;
+  src: url("./sql/fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
-  font-style: italic; 
-  src: url('./sql/fonts/Montserrat-Italic.ttf') format('truetype');
+  font-style: italic;
+  src: url("./sql/fonts/Montserrat-Italic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700; /* Bold */
-  font-style: normal; 
-  src: url('./sql/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-style: normal;
+  src: url("./sql/fonts/Montserrat-Bold.ttf") format("truetype");
 }
 /* etc. */
-
 
 /* Reset CSS */
 html,
@@ -162,7 +160,7 @@ table {
   border-spacing: 0;
 }
 body {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 h2 {
@@ -306,6 +304,48 @@ footer {
   color: #333;
   font-size: 20px;
   text-decoration: none;
+}
+.details-section {
+  background-color: #f8f9fa; /* Light grey background */
+}
+
+.details-section h2 {
+  font-weight: 700;
+}
+
+.details-section p.lead {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.details-section .list-group-item {
+  background-color: transparent;
+  border: none;
+  font-size: 0.95rem;
+}
+
+.details-section .card {
+  border: none;
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.details-section .card:hover {
+  transform: scale(1.02);
+}
+
+.details-section .card img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.parallax {
+  background-image: url("/sql/foto/cover.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
 }
 
 .menu img {
@@ -809,6 +849,7 @@ p {
   display: flex;
   justify-content: flex-end;
 }
+
 .contact-form {
   width: 100%;
   max-width: 350px;
@@ -822,6 +863,9 @@ p {
 .form-row input {
   flex: 1;
 }
+.premium-aboutus-container.fade-out {
+  opacity: 0;
+}
 
 .contact-form input,
 .contact-form textarea {
@@ -833,6 +877,7 @@ p {
   background-color: #fff;
   color: #333;
 }
+
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #999;
@@ -843,30 +888,30 @@ p {
 }
 
 .whatsapp-float {
-  position: fixed;           /* Stays in one place, even on scroll */
-  width: 60px;               /* Adjust size as needed */
+  position: fixed;
+  width: 60px;
   height: 60px;
-  bottom: 40px;              /* Distance from the bottom edge */
-  right: 40px;               /* Distance from the right edge */
-  background-color: #25d366; /* WhatsApp green */
-  color: #FFFFFF; 
-  border-radius: 50px;       /* Makes it a circle */
+  bottom: 40px;
+  right: 20px;
+  background-color: #25d366;
+  color: #ffffff;
+  border-radius: 50px;
   text-align: center;
-  font-size: 30px;           /* Icon size */
+  font-size: 30px;
   box-shadow: 2px 2px 3px #999;
-  z-index: 1000;             /* Ensure it’s on top of other elements */
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .whatsapp-float:hover {
-  background-color: #128C7E; /* Slightly darker on hover */
-  color: #FFFFFF;
+  background-color: #128c7e;
+  color: #ffffff;
 }
 
 .whatsapp-icon {
-  margin: 0 auto; /* Center icon if needed */
+  margin: 0 auto;
 }
 
 .info-block a {
@@ -888,7 +933,132 @@ p {
 .form-submit-btn:hover {
   background-color: #222;
 }
+.premium-aboutus-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  -webkit-transition: opacity 0.1s ease;
+  -moz-transition: opacity 0.1s ease;
+  -ms-transition: opacity 0.1s ease;
+  -o-transition: opacity 0.1s ease;
+}
+.premium-aboutus-container.active {
+  opacity: 1;
+  display: block;
+}
+.premium-aboutus-container.fade-in {
+  opacity: 1;
+}
+#detailsContainer {
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+.gallery-grid {
+  /* Each item’s min width = 200px (adjust as you wish) */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
 
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+#detailsContainer.fade-out {
+  opacity: 0;
+}
+
+.premium-aboutus-container {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.premium-aboutus-container.active {
+  display: block;
+}
+
+.premium-aboutus-container.fade-in {
+  opacity: 1;
+}
+
+.premium-icon img {
+  width: 65px;
+}
+
+.premium-heading {
+  font-size: 32px;
+  color: black;
+  border-bottom: 4px solid #ec5296;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.premium-subtitle {
+  color: #9a9a9a;
+  margin-bottom: 40px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.premium-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.premium-card {
+  position: relative;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  padding: 45px 26px 69px;
+  text-align: center;
+  cursor: pointer;
+}
+.premium-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #ea418c;
+  transition: height 0.3s ease;
+  z-index: 2;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.premium-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.premium-card:hover::before {
+  height: 25px;
+}
+.premium-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 18px;
+  border: 2px solid #ea418c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ea418c;
+  font-size: 28px;
+}
+.premium-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
 @media (max-width: 992px) {
   .left-contact {
     width: 100%;

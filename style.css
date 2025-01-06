@@ -1,3 +1,27 @@
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400; /* Normal weight */
+  font-style: normal; 
+  src: url('./sql/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: italic; 
+  src: url('./sql/fonts/Montserrat-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700; /* Bold */
+  font-style: normal; 
+  src: url('./sql/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+/* etc. */
+
+
 /* Reset CSS */
 html,
 body,
@@ -84,7 +108,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -105,6 +128,10 @@ section {
 
 body {
   line-height: 1;
+}
+
+a {
+  text-decoration: none;
 }
 
 ol,
@@ -135,7 +162,7 @@ table {
   border-spacing: 0;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 h2 {
@@ -813,6 +840,37 @@ p {
 .contact-form textarea {
   height: 120px;
   resize: none;
+}
+
+.whatsapp-float {
+  position: fixed;           /* Stays in one place, even on scroll */
+  width: 60px;               /* Adjust size as needed */
+  height: 60px;
+  bottom: 40px;              /* Distance from the bottom edge */
+  right: 40px;               /* Distance from the right edge */
+  background-color: #25d366; /* WhatsApp green */
+  color: #FFFFFF; 
+  border-radius: 50px;       /* Makes it a circle */
+  text-align: center;
+  font-size: 30px;           /* Icon size */
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;             /* Ensure it’s on top of other elements */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E; /* Slightly darker on hover */
+  color: #FFFFFF;
+}
+
+.whatsapp-icon {
+  margin: 0 auto; /* Center icon if needed */
+}
+
+.info-block a {
+  color: white;
 }
 
 .form-submit-btn {

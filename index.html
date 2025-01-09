@@ -134,7 +134,9 @@
         </div>
       </div>
     </div>
-
+    <div class="container">
+      <button class="gobackbtn gallery d-none" id="galleryback"><span class="arrow">&#8592;</span> Back</button>
+    </div>
     <div class="premium-subtitle container d-flex align-items-center justify-content-between gallerytitle" id="gallerytitle">
       <h2 class="premium-heading" style="border-bottom: 4px solid #eb003f">GALLERY</h2>
     </div>
@@ -213,6 +215,7 @@
 
     <!-- PREMIUM ABOUT US -->
     <div class="premium-aboutus-container" id="premiumAboutUs">
+      <button class="gobackbtn" id="aboutusback"><span class="arrow">&#8592;</span> Back</button>
       <div class="premium-subtitle d-flex align-items-center justify-content-between">
         <h2 class="premium-heading">ABOUT US</h2>
         <p style="border-bottom: 1px solid">DETAILED INFORMATION ABOUT THE COMPANY</p>
@@ -271,6 +274,7 @@
 
     <!-- PREMIUM OUR GOAL -->
     <div class="premium-aboutus-container" id="premiumOurGoal">
+      <button class="gobackbtn ourgoal" id="ourgoalback"><span class="arrow">&#8592;</span> Back</button>
       <div class="premium-subtitle d-flex align-items-center justify-content-between">
         <h2 class="premium-heading ourgoal">OUR GOAL</h2>
         <p style="border-bottom: 1px solid">DETAILED INFORMATION ABOUT THE COMPANY</p>
@@ -278,23 +282,26 @@
 
       <div class="premium-cards-grid">
         <!-- CARD 1 -->
-        <a href="20illiktecrube.html">
+        <a href="/ourgoalpages/telimproqramlari.html">
           <div class="premium-card yellow">
             <div class="premium-icon"><img src="/sql/icon/ourgoalicons/1.png" /></div>
             <h3 class="premium-title">Təlim proqramları</h3>
           </div>
         </a>
         <!-- CARD 2 -->
-        <div class="premium-card yellow">
-          <div class="premium-icon"><img src="/sql/icon/ourgoalicons/2.png" /></div>
-          <h3 class="premium-title">Məsləhətçi xidmətlər</h3>
-        </div>
-
+        <a href="/ourgoalpages/meslehetcixidmetler.html">
+          <div class="premium-card yellow">
+            <div class="premium-icon"><img src="/sql/icon/ourgoalicons/2.png" /></div>
+            <h3 class="premium-title">Məsləhətçi xidmətlər</h3>
+          </div>
+        </a>
         <!-- CARD 3 -->
-        <div class="premium-card yellow">
-          <div class="premium-icon"><img src="/sql/icon/ourgoalicons/3.png" /></div>
-          <h3 class="premium-title">Layihənin idarə edilməsi</h3>
-        </div>
+        <a href="/ourgoalpages/layiheninidareedilmesi.html">
+          <div class="premium-card yellow">
+            <div class="premium-icon"><img src="/sql/icon/ourgoalicons/3.png" /></div>
+            <h3 class="premium-title">Layihənin idarə edilməsi</h3>
+          </div>
+        </a>
       </div>
     </div>
 
@@ -441,6 +448,23 @@
           <button class="hover-btn">Read more</button>
         </div>
       </div>
+      <!-- Card 3 -->
+      <div class="news-card">
+        <div class="card-image">
+          <img src="/news/standard-quality-control-concept-m.jpg" alt="Fall Orientation Week" />
+        </div>
+
+        <div class="card-content">
+          <h2>Fall Orientation</h2>
+          <p>Sun, 05 Aug | 500 Terry A Francois Blvd</p>
+        </div>
+
+        <div class="card-hover">
+          <h3>Fall Orientation</h3>
+          <p>Meet your new classmates, explore campus facilities, and discover programs!</p>
+          <button class="hover-btn">Register Now</button>
+        </div>
+      </div>
 
       <!-- Card 2 -->
       <div class="news-card">
@@ -457,24 +481,6 @@
           <h3>Volunteering Day</h3>
           <p>Help make a difference in your community. Join us for a day of giving back!</p>
           <button class="hover-btn">Read more</button>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="news-card">
-        <div class="card-image">
-          <img src="/news/standard-quality-control-concept-m.jpg" alt="Fall Orientation Week" />
-        </div>
-
-        <div class="card-content">
-          <h2>Fall Orientation</h2>
-          <p>Sun, 05 Aug | 500 Terry A Francois Blvd</p>
-        </div>
-
-        <div class="card-hover">
-          <h3>Fall Orientation</h3>
-          <p>Meet your new classmates, explore campus facilities, and discover programs!</p>
-          <button class="hover-btn">Register Now</button>
         </div>
       </div>
     </section>
@@ -546,9 +552,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <script>
-      Fancybox.bind("[data-fancybox]", {
-        
-      });
+      Fancybox.bind("[data-fancybox]", {});
     </script>
     <script src="/app.js"></script>
   </body>

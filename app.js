@@ -15,6 +15,17 @@ showPremiumBtn.addEventListener("click", () => {
   }
 });
 
+const aboutusback = document.getElementById("aboutusback");
+aboutusback.addEventListener("click", () => {
+  detailsContainer.classList.remove("fade-in");
+  detailsContainer.classList.remove("fade-out");
+  detailsContainer.style.display = "grid";
+  detailsContainer.style.opacity = "1";
+  premiumContainer.classList.remove("active");
+  premiumContainer.offsetHeight;
+  premiumContainer.classList.remove("fade-in");
+});
+
 const showPremiumOurGoalBtn = document.getElementById("showPremiumOurGoalBtn");
 const premiumContainerOurGoal = document.getElementById("premiumOurGoal");
 showPremiumOurGoalBtn.addEventListener("click", () => {
@@ -30,9 +41,21 @@ showPremiumOurGoalBtn.addEventListener("click", () => {
   }
 });
 
+const ourgoalbackbtn = document.getElementById("ourgoalback");
+
+ourgoalbackbtn.addEventListener("click", () => {
+  detailsContainer.classList.remove("fade-out");
+  detailsContainer.classList.remove("fade-in");
+  detailsContainer.style.display = "grid";
+  detailsContainer.style.opacity = "1";
+  premiumContainerOurGoal.classList.remove("active");
+  premiumContainerOurGoal.classList.remove("fade-in");
+});
+
 const showGalleryBtn = document.getElementById("showgallery");
 const gallerycontainer = document.getElementById("gallerycontainer");
 const gallerytitle = document.getElementById("gallerytitle");
+const gallerybtn = document.getElementById("galleryback");
 showGalleryBtn.addEventListener("click", () => {
   detailsContainer.classList.add("fade-out");
 
@@ -40,10 +63,24 @@ showGalleryBtn.addEventListener("click", () => {
 
   function onDetailsFadeOut() {
     detailsContainer.style.display = "none";
+    gallerybtn.classList.add("d-block");
+    gallerybtn.classList.remove("d-none");
     gallerycontainer.classList.add("active");
     gallerytitle.classList.add("active");
     gallerycontainer.classList.add("fade-in d-block");
   }
+});
+
+gallerybtn.addEventListener("click", () => {
+  detailsContainer.classList.remove("fade-out");
+
+  detailsContainer.style.display = "block";
+  detailsContainer.style.opacity = "1";
+  gallerybtn.classList.remove("d-block");
+  gallerybtn.classList.add("d-none");
+  gallerycontainer.classList.remove("active");
+  gallerytitle.classList.remove("active");
+  gallerycontainer.classList.remove("fade-in d-block");
 });
 
 const newsbtn = document.getElementById("newsbtn");
@@ -53,7 +90,7 @@ const detailsContainer2 = document.getElementById("detailsContainer2");
 newsbtn.addEventListener("click", () => {
   detailsContainer2.classList.add("fade-out");
   detailsContainer2.addEventListener("transitionend", onDetailsFadeOut, { once: true });
-    
+
   function onDetailsFadeOut() {
     detailsContainer2.style.display = "none";
     newscontainer.classList.add("active");

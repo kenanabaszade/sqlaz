@@ -74,7 +74,7 @@ showGalleryBtn.addEventListener("click", () => {
 gallerybtn.addEventListener("click", () => {
   detailsContainer.classList.remove("fade-out");
 
-  detailsContainer.style.display = "block";
+  detailsContainer.style.display = "grid";
   detailsContainer.style.opacity = "1";
   gallerybtn.classList.remove("d-block");
   gallerybtn.classList.add("d-none");

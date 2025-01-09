@@ -328,6 +328,10 @@ footer {
   border: none;
   border-radius: 6px;
   transition: transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
 }
 
 .details-section .card:hover {
@@ -411,11 +415,11 @@ footer {
   background-size: cover;
   background-position: center;
 }
+
 /* The text area on the right */
 .text-area {
   flex: 1;
   display: flex;
-  margin-top: 20px;
   flex-direction: column;
 }
 
@@ -483,7 +487,6 @@ footer {
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
   background-color: #ff0033;
 }
 
@@ -509,20 +512,28 @@ footer {
   font-size: 14px;
   font-weight: 400;
   transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
 }
+
 .nav-grid a:hover {
   text-decoration: underline;
   color: #fff;
 }
+
 .card5-header {
   text-align: center;
   padding: 20px;
 }
+
 .secondcard5-header {
   text-align: center;
   padding: 20px;
   margin-top: 35px;
 }
+
 .gallery-outline {
   display: inline-block;
   color: #fff;
@@ -533,6 +544,7 @@ footer {
   padding: 6px 14px;
   margin-bottom: 10px;
 }
+
 .card5-header h3 {
   margin: 8px 0 5px;
   font-size: 1rem;
@@ -550,20 +562,24 @@ footer {
   padding: 10px;
   margin-top: auto;
 }
+
 .card5-footer a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   font-size: 0.9rem;
 }
+
 .card5-footer a:hover {
   text-decoration: underline;
 }
+
 .secondcard5-header h3 {
   margin: 8px 0 5px;
   font-size: 1rem;
   color: #fff;
 }
+
 .secondcard5-header p {
   font-size: 0.9rem;
   line-height: 1.4;
@@ -644,10 +660,10 @@ footer {
   padding: 12px;
   color: #fff;
   border: #ff0090;
-  width: 170px;
+  width: 175px;
   border-radius: 20px;
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
   margin-bottom: 10px;
   -webkit-border-radius: 20px;
@@ -655,6 +671,7 @@ footer {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
+
 .about {
   background-color: #ff0090;
 }
@@ -662,9 +679,11 @@ footer {
 .ourbooks {
   background-color: #3cbd00;
 }
+
 .goal {
   background-color: #ff6f00;
 }
+
 .ourtraining {
   background-color: #dea431;
 }
@@ -672,9 +691,11 @@ footer {
 .consultingservice {
   background-color: #9243ac;
 }
+
 .mission {
   background-color: #007bff;
 }
+
 .gallery {
   background-color: #ff0033;
 }
@@ -786,22 +807,26 @@ p {
   align-items: center;
   margin-bottom: 20px;
 }
+
 .brand-area img {
   width: 60px;
   height: 60px;
   object-fit: contain;
   margin-right: 15px;
 }
+
 .brand-text {
   display: flex;
   flex-direction: column;
 }
+
 .brand-text h1 {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 5px;
   line-height: 1.1;
 }
+
 .brand-text h2 {
   font-size: 20px;
   font-weight: 300;
@@ -860,11 +885,17 @@ p {
   display: flex;
   gap: 10px;
 }
+
 .form-row input {
   flex: 1;
 }
+
 .premium-aboutus-container.fade-out {
   opacity: 0;
+}
+
+.fade-out {
+opacity: 0 !important;
 }
 
 .contact-form input,
@@ -929,6 +960,10 @@ p {
   font-size: 14px;
   border-radius: 2px;
   transition: background-color 0.2s ease;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -ms-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
 }
 .form-submit-btn:hover {
   background-color: #222;
@@ -952,10 +987,25 @@ p {
 .premium-aboutus-container.fade-in {
   opacity: 1;
 }
+
 #detailsContainer {
   opacity: 1;
   transition: opacity 0.6s ease;
+  -webkit-transition: opacity 0.6s ease;
+  -moz-transition: opacity 0.6s ease;
+  -ms-transition: opacity 0.6s ease;
+  -o-transition: opacity 0.6s ease;
 }
+
+#detailsContainer2 {
+  opacity: 1;
+  transition: opacity 0.6s ease;
+  -webkit-transition: opacity 0.6s ease;
+  -moz-transition: opacity 0.6s ease;
+  -ms-transition: opacity 0.6s ease;
+  -o-transition: opacity 0.6s ease;
+}
+
 .gallery-grid {
   /* Each item’s min width = 200px (adjust as you wish) */
   display: grid;
@@ -979,6 +1029,10 @@ p {
   display: none;
   opacity: 0;
   transition: opacity 0.6s ease;
+  -webkit-transition: opacity 0.6s ease;
+  -moz-transition: opacity 0.6s ease;
+  -ms-transition: opacity 0.6s ease;
+  -o-transition: opacity 0.6s ease;
 }
 
 .premium-aboutus-container.active {
@@ -1000,11 +1054,66 @@ p {
   font-weight: 700;
   margin-bottom: 5px;
 }
+
+.premium-heading.ourgoal {
+  border-bottom: 4px solid #ff6f00;
+}
+
 .premium-subtitle {
   color: #9a9a9a;
   margin-bottom: 40px;
   font-size: 14px;
   letter-spacing: 1px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  left: 20px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 9999;
+  -webkit-transition: opacity 0.3s, transform 0.3s;
+  -moz-transition: opacity 0.3s, transform 0.3s;
+  -ms-transition: opacity 0.3s, transform 0.3s;
+  -o-transition: opacity 0.3s, transform 0.3s;
+}
+
+.scroll-to-top:hover {
+  background-color: #555;
+}
+
+.scroll-to-top svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+}
+
+.scroll-to-top:hover svg {
+  transform: translateY(-2px);
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
 }
 
 .premium-cards-grid {
@@ -1022,6 +1131,10 @@ p {
   padding: 45px 26px 69px;
   text-align: center;
   cursor: pointer;
+  -webkit-transition: box-shadow 0.3s ease;
+  -moz-transition: box-shadow 0.3s ease;
+  -ms-transition: box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
 }
 .premium-card::before {
   content: "";
@@ -1036,12 +1149,29 @@ p {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+
+.premium-card.yellow::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #ff6f00;
+  transition: height 0.3s ease;
+  z-index: 2;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
 .premium-card:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
 .premium-card:hover::before {
   height: 25px;
 }
+
 .premium-icon {
   width: 65px;
   height: 65px;
@@ -1054,11 +1184,13 @@ p {
   color: #ea418c;
   font-size: 28px;
 }
+
 .premium-title {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.4;
 }
+
 @media (max-width: 992px) {
   .left-contact {
     width: 100%;
@@ -1079,6 +1211,7 @@ p {
     grid-template-rows: auto auto;
   }
 }
+
 @media (max-width: 600px) {
   .container {
     grid-template-columns: 1fr;
@@ -1106,6 +1239,7 @@ p {
     grid-row: auto;
   }
 }
+
 @media (max-width: 600px) {
   .container {
     grid-template-columns: 1fr;
@@ -1143,4 +1277,295 @@ p {
   .header .social-icons {
     margin: 10px 0;
   }
+}
+
+/* 
+   ========== GRID CONTAINER ==========
+   We'll use 2 rows × 12 columns.
+   Row 1 areas:
+   - building (small, 2 columns)
+   - certification (large, 6 columns)
+   - coder (4 columns, spanning both rows)
+   Row 2 areas:
+   - laptop (large, 6 columns)
+   - structure (small, 2 columns)
+   - coder (the same 4 columns as row 1)
+*/
+.gallery-grid.active {
+  display: grid;
+  opacity: 1;
+}
+
+.gallerytitle {
+  display: none;
+  opacity: 0;
+}
+
+.gallerytitle.active {
+  display: block;
+  opacity: 1;
+}
+
+.gallery-grid {
+  display: none;
+  grid-template-columns: repeat(12, 1fr); /* 12 equal-width columns */
+  grid-template-rows: auto auto; /* 2 rows (height adjusts to content) */
+  gap: 20px;
+  width: 90%;
+  max-width: 1300px;
+  opacity: 0;
+  margin: 5px auto;
+
+  /*
+     Define the named areas for each row:
+     
+     Row 1: 
+       building = columns 1-2 (2 wide)
+       certification = columns 3-8 (6 wide)
+       coder = columns 9-12 (4 wide)
+
+     Row 2:
+       laptop = columns 1-6 (6 wide)
+       structure = columns 7-8 (2 wide)
+       coder = columns 9-12 (4 wide)
+  */
+  grid-template-areas:
+    "build build cert cert cert cert cert cert code code code code"
+    "lap   lap   lap  lap  lap  lap  struct struct code code code code";
+}
+
+/* 
+   ========== SHARED STYLES FOR ITEMS ==========
+   Each gallery-item will occupy its named grid-area.
+*/
+.gallery-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px; /* adjust as needed */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* ========== INDIVIDUAL GRID-AREA MAPPINGS ========== */
+.item-building {
+  grid-area: build;
+  background-image: url("/gallery/5.jpg");
+}
+.item-certification {
+  grid-area: cert;
+  background-image: url("/gallery/2.jpg");
+}
+.item-coder {
+  grid-area: code; /* spans both rows (9-12 in each row) */
+  background-image: url("/gallery/4.jpg");
+}
+.item-laptop {
+  grid-area: lap;
+  background-image: url("/gallery/3.jpg");
+}
+.item-structure {
+  grid-area: struct;
+  background-image: url("/gallery/1.jpg");
+}
+
+/* ========== TOP-RIGHT ICON ========== */
+.top-right-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  background: url("https://via.placeholder.com/32?text=%F0%9F%93%B7") no-repeat center / cover;
+  z-index: 2;
+}
+
+/* ========== HOVER OVERLAY ========== */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #3f5a7c69;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+/* Show overlay on hover */
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+/* ========== CERTIFICATION OVERLAY (EXAMPLE) ========== */
+.center-overlay h2 {
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.center-overlay p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.card-hover p,
+.card-hover h3 {
+  color: white;
+}
+
+.center-overlay button {
+  background: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.center-overlay button:hover {
+  background: #ddd;
+}
+.news-container.active {
+  display: flex;
+  opacity: 1;
+}
+
+.news-container {
+  opacity: 0;
+  display: none;
+  gap: 7px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1313px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* 
+   ========== INDIVIDUAL CARD STYLES ==========
+   We'll use a box shadow, small border radius, and a consistent width.
+*/
+.news-card {
+  position: relative; /* for the overlay positioning */
+  width: 370px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 
+   On hover, the card lifts slightly (premium effect).
+   Also increases shadow for a "pop."
+*/
+.news-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image on top */
+.card-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 213px !important;
+  height: auto;
+  display: block;
+}
+
+/* 
+   Card content: text and default button 
+   (the part that's always visible)
+*/
+.card-content {
+  padding: 15px 20px;
+}
+.card-content h2 {
+  font-size: 1.2rem;
+  color: #3448c5; /* a nice blue shade */
+  margin-bottom: 8px;
+}
+.card-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+/* The default button inside content */
+.default-btn {
+  background: #fff;
+  color: #3448c5;
+  border: 2px solid #3448c5;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.default-btn:hover {
+  background: #3448c5;
+  color: #fff;
+}
+
+/* 
+   ========== THE "BOTTOM-TO-TOP" HOVER OVERLAY ==========
+   We'll place it at the bottom, hidden initially. 
+   Then it slides up (translateY(0)) on hover.
+*/
+.card-hover {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* Start hidden below the card */
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  background: linear-gradient(180deg, rgba(52, 72, 197, 0.95) 0%, rgba(52, 72, 197, 0.9) 100%);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 
+   Show the overlay when we hover on the entire card. 
+   We slide it up from the bottom. 
+*/
+.news-card:hover .card-hover {
+  transform: translateY(0);
+}
+
+/* Heading and text in the hover overlay */
+.card-hover h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.card-hover p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* The button in the hover overlay */
+.hover-btn {
+  background: #fff;
+  color: #3448c5;
+  border: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hover-btn:hover {
+  background: #e1e1e1;
 }

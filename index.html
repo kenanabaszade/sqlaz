@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
@@ -76,13 +77,15 @@
         </div>
       </div>
     </nav>
-    <div class="parallax"></div>
-    <div class="gridcontainer container py-4" id="detailsContainer">
-      <div class="card card1 horizontal-card">
+
+    <div class="parallax mb-3"></div>
+
+    <div class="gridcontainer container py-3" id="detailsContainer">
+      <div class="card card1 horizontal-card" id="showPremiumBtn" style="cursor: pointer">
         <div class="image-area" style="background-image: url('/sql/foto/1.png')"></div>
         <div class="text-area">
-          <div class="px-3">
-            <button class="bubble-header about" id="showPremiumBtn">ABOUT US</button>
+          <div class="px-3 pt-3">
+            <button class="bubble-header about">ABOUT US</button>
             <h3>Detailed information about the unit is mentioned below.</h3>
             <p>A career in information technology can provide opportunities to collaborate with various industries, develop innovative solutions, and expand your professional skillset.</p>
           </div>
@@ -95,8 +98,7 @@
       <div class="card card2">
         <img src="/sql/foto/2.png" alt="Image" />
       </div>
-
-      <div class="card card3">
+      <div class="card card3" style="cursor: pointer" id="showPremiumOurGoalBtn">
         <div class="text-area">
           <div class="px-3 mt-4">
             <div class="bubble-header goal">OUR GOAL</div>
@@ -108,10 +110,9 @@
           </div>
         </div>
       </div>
-
-      <div class="card card4">
+      <div class="card card4" style="cursor: pointer">
         <div class="card4-top">
-          <div class="card4-label mt-4">OUR MISSION</div>
+          <div class="card4-label mt-3">OUR MISSION</div>
         </div>
         <div class="card4-content">
           <h3>Detailed info about the unit.</h3>
@@ -122,7 +123,7 @@
         </div>
       </div>
 
-      <div class="card card5">
+      <div class="card card5" id="showgallery" style="cursor: pointer">
         <div class="card5-header mt-4">
           <div class="gallery-outline">GALLERY</div>
           <h3>Photos &amp; Videos</h3>
@@ -133,6 +134,84 @@
         </div>
       </div>
     </div>
+
+    <div class="premium-subtitle container d-flex align-items-center justify-content-between gallerytitle" id="gallerytitle">
+      <h2 class="premium-heading" style="border-bottom: 4px solid #eb003f">GALLERY</h2>
+    </div>
+
+    <section class="gallery-grid" id="gallerycontainer">
+      <!-- Building (small, row1) -->
+      <div class="gallery-item item-building">
+        <div class="top-right-icon"></div>
+        <div class="overlay center-overlay">
+          <a class="fancybox-trigger" data-fancybox="gallery" data-src="/gallery/5.jpg" href="javascript:;">
+            <button>VIEW</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Certification (large, row1) -->
+      <div class="gallery-item item-certification">
+        <div class="top-right-icon"></div>
+        <div class="overlay center-overlay">
+          <h2>CERTIFICATION EVENT</h2>
+          <p>Awarding certificates to students in SQL</p>
+          <a class="fancybox-trigger" data-fancybox="gallery" data-src="/gallery/2.jpg" href="javascript:;">
+            <button>VIEW</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Coder (spans 2 rows on the right) -->
+      <div class="gallery-item item-coder">
+        <div class="top-right-icon"></div>
+        <div class="overlay center-overlay">
+          <a class="fancybox-trigger" data-fancybox="gallery" data-src="/gallery/4.jpg" href="javascript:;">
+            <button>VIEW</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Laptop (large, row2) -->
+      <div class="gallery-item item-laptop">
+        <div class="top-right-icon"></div>
+        <div class="overlay center-overlay">
+          <a class="fancybox-trigger" data-fancybox="gallery" data-src="/gallery/3.jpg" href="javascript:;">
+            <button>VIEW</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Structure (small, row2) -->
+      <div class="gallery-item item-structure">
+        <div class="top-right-icon"></div>
+        <div class="overlay center-overlay">
+          <a class="fancybox-trigger" data-fancybox="gallery" data-src="/gallery/1.jpg" href="javascript:;">
+            <button>VIEW</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hidden images -->
+    <a class="fancybox-trigger" data-fancybox="gallery" style="display: none" data-src="/sql/foto/1.png"></a>
+    <a class="fancybox-trigger" data-fancybox="gallery" style="display: none" data-src="/sql/foto/2.png"></a>
+    <a class="fancybox-trigger" data-fancybox="gallery" style="display: none" data-src="/sql/foto/3.png"></a>
+    <a
+      style="display: none"
+      data-fancybox="gallery"
+      data-type="html"
+      data-src="
+      <video width='640' height='360' controls autoplay>
+        <source src='/video/samples4.mp4' type='video/mp4'>
+        Your browser does not support the video tag.
+      </video>"
+      href="javascript:;"
+    >
+      Play MP4 Video
+    </a>
+
+    <!-- PREMIUM ABOUT US -->
     <div class="premium-aboutus-container" id="premiumAboutUs">
       <div class="premium-subtitle d-flex align-items-center justify-content-between">
         <h2 class="premium-heading">ABOUT US</h2>
@@ -141,43 +220,84 @@
 
       <div class="premium-cards-grid">
         <!-- CARD 1 -->
-        <a href="20illiktecrube.html">
+        <a href="/aboutus/20illiktecrube.html">
           <div class="premium-card">
             <div class="premium-icon"><img src="/sql/icon/abouticons/20 illik.png" /></div>
             <h3 class="premium-title">İT üzrə<br />20 illik təcrübə</h3>
           </div>
         </a>
+
         <!-- CARD 2 -->
-        <div class="premium-card">
-          <div class="premium-icon"><img src="/sql/icon/abouticons/ugurlu.png" /></div>
-          <h3 class="premium-title">Texnika üzrə<br />PhD elmi dərəcə</h3>
+        <a href="/aboutus/texnikauzre.html">
+          <div class="premium-card">
+            <div class="premium-icon"><img src="/sql/icon/abouticons/ugurlu.png" /></div>
+            <h3 class="premium-title">Texnika üzrə<br />PhD elmi dərəcə</h3>
+          </div>
+        </a>
+
+        <!-- CARD 3 -->
+        <a href="/aboutus/oracleuzre.html">
+          <div class="premium-card">
+            <div class="premium-icon"><img src="/sql/icon/abouticons/oracle sert.png" /></div>
+            <h3 class="premium-title">Oracle üzrə<br />Beynəlxalq sertifikatlar</h3>
+          </div>
+        </a>
+
+        <!-- CARD 4 -->
+        <a href="/aboutus/oraclecertificate.html">
+          <div class="premium-card">
+            <div class="premium-icon"><img src="/sql/icon/abouticons/oracle uzre.jpg" /></div>
+            <h3 class="premium-title">Oracle Certified Master-in<br />ən yüksək dərəcəsi</h3>
+          </div>
+        </a>
+
+        <!-- CARD 5 -->
+        <a href="/aboutus/xariciyerli.html">
+          <div class="premium-card">
+            <div class="premium-icon"><img src="/sql/icon/abouticons/xarici.png" /></div>
+            <h3 class="premium-title">Xarici və yerli biznes<br />tərəfdaşlarımız</h3>
+          </div>
+        </a>
+
+        <!-- CARD 6 -->
+        <a href="/aboutus/ugurlu.html">
+          <div class="premium-card">
+            <div class="premium-icon"><img src="/sql/icon/abouticons/ugurlu.png" /></div>
+            <h3 class="premium-title">Uğurlu layihələr,<br />yüksək nəticələr</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- PREMIUM OUR GOAL -->
+    <div class="premium-aboutus-container" id="premiumOurGoal">
+      <div class="premium-subtitle d-flex align-items-center justify-content-between">
+        <h2 class="premium-heading ourgoal">OUR GOAL</h2>
+        <p style="border-bottom: 1px solid">DETAILED INFORMATION ABOUT THE COMPANY</p>
+      </div>
+
+      <div class="premium-cards-grid">
+        <!-- CARD 1 -->
+        <a href="20illiktecrube.html">
+          <div class="premium-card yellow">
+            <div class="premium-icon"><img src="/sql/icon/ourgoalicons/1.png" /></div>
+            <h3 class="premium-title">Təlim proqramları</h3>
+          </div>
+        </a>
+        <!-- CARD 2 -->
+        <div class="premium-card yellow">
+          <div class="premium-icon"><img src="/sql/icon/ourgoalicons/2.png" /></div>
+          <h3 class="premium-title">Məsləhətçi xidmətlər</h3>
         </div>
 
         <!-- CARD 3 -->
-        <div class="premium-card">
-          <div class="premium-icon"><img src="/sql/icon/abouticons/oracle sert.png" /></div>
-          <h3 class="premium-title">Oracle üzrə<br />Beynəlxalq sertifikatlar</h3>
-        </div>
-
-        <!-- CARD 4 -->
-        <div class="premium-card">
-          <div class="premium-icon"><img src="/sql/icon/abouticons/oracle uzre.jpg" /></div>
-          <h3 class="premium-title">Oracle Certified Master-in<br />ən yüksək dərəcəsi</h3>
-        </div>
-
-        <!-- CARD 5 -->
-        <div class="premium-card">
-          <div class="premium-icon"><img src="/sql/icon/abouticons/xarici.png" /></div>
-          <h3 class="premium-title">Xarici və yerli biznes<br />tərəfdaşlarımız</h3>
-        </div>
-
-        <!-- CARD 6 -->
-        <div class="premium-card">
-          <div class="premium-icon"><img src="/sql/icon/abouticons/ugurlu.png" /></div>
-          <h3 class="premium-title">Uğurlu layihələr,<br />yüksək nəticələr</h3>
+        <div class="premium-card yellow">
+          <div class="premium-icon"><img src="/sql/icon/ourgoalicons/3.png" /></div>
+          <h3 class="premium-title">Layihənin idarə edilməsi</h3>
         </div>
       </div>
     </div>
+
     <!-- Carousel -->
 
     <div class="container py-2">
@@ -244,7 +364,7 @@
 
     <!-- second cards -->
 
-    <div class="gridcontainer2 container pt-3 pb-5">
+    <div class="gridcontainer2 container pt-3 pb-5" id="detailsContainer2">
       <div class="card secondcard2">
         <img src="/sql/foto/4.png" alt="Image" />
       </div>
@@ -264,7 +384,7 @@
 
       <div class="card secondcard4">
         <div class="text-area">
-          <div class="px-3 mt-4">
+          <div class="px-3 pt-3">
             <div class="bubble-header consultingservice">CONSULTING SERVICE</div>
             <h3>Detailed info about the unit.</h3>
             <p>Working with cutting-edge technologies can help shape the future and drive digital transformation.</p>
@@ -277,7 +397,7 @@
 
       <div class="card secondcard5">
         <div class="secondcard5-header">
-          <div class="gallery-outline">NEWS</div>
+          <div class="gallery-outline" id="newsbtn">NEWS</div>
           <h3>The first SQL book...</h3>
           <p>A career in informaton technology can...</p>
         </div>
@@ -288,7 +408,7 @@
 
       <div class="card secondcard1 horizontal-card">
         <div class="text-area">
-          <div class="px-3">
+          <div class="px-3 pt-3">
             <button class="bubble-header ourbooks">OUR BOOKS</button>
             <h3>Detailed information about the unit is mentioned below.</h3>
             <p>A career in information technology can provide opportunities to collaborate with...</p>
@@ -300,6 +420,64 @@
         <div class="image-area" style="background-image: url('/sql/foto/5.png')"></div>
       </div>
     </div>
+
+    <!-- Our news -->
+    <section class="news-container" id="newscontainer">
+      <!-- Card 1 -->
+      <div class="news-card">
+        <div class="card-image">
+          <img src="/news/foto1.jpg" alt="Innovation Meetup" />
+        </div>
+
+        <div class="card-content">
+          <h2>Innovation Meetup</h2>
+          <p>Sun, 01 Apr | 500 Terry A Francois Blvd</p>
+        </div>
+
+        <!-- Hover Overlay from Bottom to Top -->
+        <div class="card-hover">
+          <h3>Innovation Meetup</h3>
+          <p>Collaborate with like-minded innovators. Share ideas, projects & more!</p>
+          <button class="hover-btn">Read more</button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="news-card">
+        <div class="card-image">
+          <img src="/news/foto2.jpg" alt="Volunteering Day" />
+        </div>
+
+        <div class="card-content">
+          <h2>Volunteering Day</h2>
+          <p>15 Jun 2035 | 500 Terry A Francois Blvd</p>
+        </div>
+
+        <div class="card-hover">
+          <h3>Volunteering Day</h3>
+          <p>Help make a difference in your community. Join us for a day of giving back!</p>
+          <button class="hover-btn">Read more</button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="news-card">
+        <div class="card-image">
+          <img src="/news/standard-quality-control-concept-m.jpg" alt="Fall Orientation Week" />
+        </div>
+
+        <div class="card-content">
+          <h2>Fall Orientation</h2>
+          <p>Sun, 05 Aug | 500 Terry A Francois Blvd</p>
+        </div>
+
+        <div class="card-hover">
+          <h3>Fall Orientation</h3>
+          <p>Meet your new classmates, explore campus facilities, and discover programs!</p>
+          <button class="hover-btn">Register Now</button>
+        </div>
+      </div>
+    </section>
 
     <!-- form section -->
 
@@ -350,6 +528,12 @@
       </div>
     </section>
 
+    <div class="scroll-to-top" id="scrollToTop">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 4l-6 6h4v6h4v-6h4l-6-6z" />
+      </svg>
+    </div>
+
     <a href="https://wa.me/1234567890?text=Hello" target="_blank" class="whatsapp-float" rel="noopener noreferrer">
       <i class="fab fa-whatsapp whatsapp-icon"></i>
     </a>
@@ -360,6 +544,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        
+      });
+    </script>
     <script src="/app.js"></script>
   </body>
 </html>

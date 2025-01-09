@@ -324,9 +324,8 @@ footer {
   font-size: 0.95rem;
 }
 
-
 .gobackbtn {
-  background: linear-gradient(45deg, #ec5296, #ec5296); 
+  background: linear-gradient(45deg, #ec5296, #ec5296);
   color: white;
   font-size: 1rem;
   font-family: Arial, sans-serif;
@@ -365,7 +364,7 @@ footer {
 .gobackbtn.gallery:focus {
   outline: 2px solid #eb003f;
 }
- 
+
 .gobackbtn:hover {
   background: linear-gradient(45deg, #ec5296, #ec5296); /* Reverse gradient */
   transform: translateY(-2px);
@@ -376,9 +375,9 @@ footer {
   outline: 2px solid #ec5296;
   outline-offset: 4px;
 }
- 
+
 .gobackbtn .arrow {
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   margin-right: 4px;
   display: inline-block;
   transition: transform 0.3s ease;
@@ -388,7 +387,6 @@ footer {
 .gobackbtn:hover .arrow {
   transform: translateX(-4px);
 }
-
 
 .details-section .card {
   border: none;
@@ -578,6 +576,7 @@ footer {
   font-size: 14px;
   font-weight: 400;
   transition: color 0.2s ease;
+  white-space: nowrap;
   -webkit-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
   -ms-transition: color 0.2s ease;
@@ -851,7 +850,7 @@ p {
   padding: 40px 0;
 }
 .contact-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -861,9 +860,9 @@ p {
 
 .left-contact {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
-  width: 60%;
+  width: 100%;
   min-width: 300px;
   color: #fff;
 }
@@ -872,6 +871,7 @@ p {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  margin-right: 55px;
 }
 
 .brand-area img {
@@ -889,6 +889,7 @@ p {
 .brand-text h1 {
   font-size: 28px;
   font-weight: bold;
+  white-space: nowrap;
   margin-bottom: 5px;
   line-height: 1.1;
 }
@@ -961,7 +962,7 @@ p {
 }
 
 .fade-out {
-opacity: 0 !important;
+  opacity: 0 !important;
 }
 
 .contact-form input,

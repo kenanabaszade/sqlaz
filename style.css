@@ -341,6 +341,10 @@ footer {
   box-shadow: 0px 4px 6px #ec5296;
 }
 
+.gobackbtn.news {
+  box-shadow: 0px 4px 6px #024470;
+}
+
 .gobackbtn.ourgoal {
   background: linear-gradient(45deg, #ff6f00, #ff6f00);
 }
@@ -349,8 +353,26 @@ footer {
   background: linear-gradient(45deg, #ff6f00, #ff6f00);
 }
 
+.gobackbtn.news {
+  background: linear-gradient(45deg, #024470, #024470);
+}
+.gobackbtn.news:hover {
+  background: linear-gradient(45deg, #024470, #024470);
+}
+
 .gobackbtn.ourgoal:focus {
-  outline: 2px solid #ff6f00;
+  outline: 2px solid #024470;
+}
+.gobackbtn.news {
+  background: linear-gradient(45deg, #024470, #024470);
+}
+
+.gobackbtn.news:hover {
+  background: linear-gradient(45deg, #024470, #024470);
+}
+
+.gobackbtn.news:focus {
+  outline: 2px solid #024470;
 }
 
 .gobackbtn.gallery {
@@ -1126,6 +1148,10 @@ p {
   border-bottom: 4px solid #ff6f00;
 }
 
+.premium-heading.news {
+  border-bottom: 4px solid #024470;
+}
+
 .premium-subtitle {
   color: #9a9a9a;
   margin-bottom: 40px;
@@ -1498,6 +1524,7 @@ p {
 .center-overlay button:hover {
   background: #ddd;
 }
+
 .news-container.active {
   display: flex;
   opacity: 1;
@@ -1510,7 +1537,7 @@ p {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  max-width: 1313px;
+  max-width: 1350px;
   margin: 50px auto;
   padding: 0 20px;
 }

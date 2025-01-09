@@ -84,7 +84,9 @@ gallerybtn.addEventListener("click", () => {
 });
 
 const newsbtn = document.getElementById("newsbtn");
+const newsback = document.getElementById("newsback");
 const newscontainer = document.getElementById("newscontainer");
+const newsheadcontainer = document.getElementById("newsheadercontainer");
 const detailsContainer2 = document.getElementById("detailsContainer2");
 
 newsbtn.addEventListener("click", () => {
@@ -93,9 +95,18 @@ newsbtn.addEventListener("click", () => {
 
   function onDetailsFadeOut() {
     detailsContainer2.style.display = "none";
+    newsheadcontainer.style.display = "block";
     newscontainer.classList.add("active");
-    newscontainer.classList.add("fade-in d-block");
+
   }
+});
+
+newsback.addEventListener("click", () => {
+  detailsContainer2.classList.remove("fade-out");
+  detailsContainer2.style.display = "grid";
+  newsheadcontainer.style.display = "none";
+  detailsContainer2.style.opacity = "1";
+  newscontainer.classList.remove("active");
 });
 
 // Show or hide the button based on scroll position

@@ -108,8 +108,7 @@ newsback.addEventListener("click", () => {
   detailsContainer2.style.opacity = "1";
   newscontainer.classList.remove("active");
 });
-
-// Show or hide the button based on scroll position
+ 
 window.addEventListener("scroll", function () {
   const scrollToTopBtn = document.getElementById("scrollToTop");
   if (window.scrollY > 300) {
@@ -119,7 +118,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Smooth scroll back to top when button is clicked
 document.getElementById("scrollToTop").addEventListener("click", function () {
   window.scrollTo({
     top: 0,

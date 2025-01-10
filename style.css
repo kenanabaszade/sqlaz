@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Montserrat";
-  font-weight: 400; /* Normal weight */
+  font-weight: 400;  
   font-style: normal;
   src: url("./sql/fonts/Montserrat-Regular.ttf") format("truetype");
 }
@@ -14,11 +14,11 @@
 
 @font-face {
   font-family: "Montserrat";
-  font-weight: 700; /* Bold */
+  font-weight: 700;  
   font-style: normal;
   src: url("./sql/fonts/Montserrat-Bold.ttf") format("truetype");
 }
-/* etc. */
+ 
 
 /* Reset CSS */
 html,
@@ -1428,9 +1428,10 @@ p {
 }
 
 /* 
-   ========== SHARED STYLES FOR ITEMS ==========
+     ========== SHARED STYLES FOR ITEMS ==========
    Each gallery-item will occupy its named grid-area.
 */
+
 .gallery-item {
   position: relative;
   background-size: cover;
@@ -1441,22 +1442,27 @@ p {
 }
 
 /* ========== INDIVIDUAL GRID-AREA MAPPINGS ========== */
+
 .item-building {
   grid-area: build;
   background-image: url("/gallery/5.jpg");
 }
+
 .item-certification {
   grid-area: cert;
   background-image: url("/gallery/2.jpg");
 }
+
 .item-coder {
-  grid-area: code; /* spans both rows (9-12 in each row) */
+  grid-area: code;
   background-image: url("/gallery/4.jpg");
 }
+
 .item-laptop {
   grid-area: lap;
   background-image: url("/gallery/3.jpg");
 }
+
 .item-structure {
   grid-area: struct;
   background-image: url("/gallery/1.jpg");
@@ -1541,11 +1547,7 @@ p {
   margin: 50px auto;
   padding: 0 20px;
 }
-
-/* 
-   ========== INDIVIDUAL CARD STYLES ==========
-   We'll use a box shadow, small border radius, and a consistent width.
-*/
+ 
 .news-card {
   position: relative; /* for the overlay positioning */
   width: 370px;
@@ -1555,11 +1557,7 @@ p {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-/* 
-   On hover, the card lifts slightly (premium effect).
-   Also increases shadow for a "pop."
-*/
+ 
 .news-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
@@ -1573,11 +1571,7 @@ p {
   height: auto;
   display: block;
 }
-
-/* 
-   Card content: text and default button 
-   (the part that's always visible)
-*/
+ 
 .card-content {
   padding: 15px 20px;
 }
@@ -1601,7 +1595,11 @@ p {
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
 }
 
 .default-btn:hover {
@@ -1618,8 +1616,7 @@ p {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
-  /* Start hidden below the card */
+  width: 100%; 
   transform: translateY(100%);
   transition: transform 0.4s ease;
   background: linear-gradient(180deg, rgba(52, 72, 197, 0.95) 0%, rgba(52, 72, 197, 0.9) 100%);
@@ -1627,16 +1624,11 @@ p {
   padding: 20px;
   text-align: center;
 }
-
-/* 
-   Show the overlay when we hover on the entire card. 
-   We slide it up from the bottom. 
-*/
+ 
 .news-card:hover .card-hover {
   transform: translateY(0);
 }
-
-/* Heading and text in the hover overlay */
+ 
 .card-hover h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
@@ -1647,8 +1639,7 @@ p {
   margin-bottom: 15px;
   line-height: 1.4;
 }
-
-/* The button in the hover overlay */
+ 
 .hover-btn {
   background: #fff;
   color: #3448c5;
@@ -1657,7 +1648,11 @@ p {
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
 }
 
 .hover-btn:hover {

@@ -41,6 +41,22 @@ showPremiumOurGoalBtn.addEventListener("click", () => {
   }
 });
 
+
+const showOurMissionBtn= document.getElementById("showOurMission");
+const ourmissioncontainer = document.getElementById("ourmissioncontainer");
+showOurMissionBtn.addEventListener("click", () => {
+  detailsContainer.classList.add("fade-out");
+
+  detailsContainer.addEventListener("transitionend", onDetailsFadeOut, { once: true });
+
+  function onDetailsFadeOut() {
+    detailsContainer.style.display = "none";
+    ourmissioncontainer.classList.add("active");
+    ourmissioncontainer.offsetHeight;
+    ourmissioncontainer.classList.add("fade-in");
+  }
+});
+
 const ourgoalbackbtn = document.getElementById("ourgoalback");
 
 ourgoalbackbtn.addEventListener("click", () => {

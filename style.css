@@ -430,12 +430,21 @@ footer {
 }
 
 .parallax {
-  background-image: url("/sql/foto/cover.png");
+  background-image: url("/gallery/high.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
+}.parallax::before {
+  content: "";
+  position: absolute;
+  top: 109px;
+  right: 0;
+  bottom: 224px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .menu img {
@@ -1667,3 +1676,22 @@ p {
 .hover-btn:hover {
   background: #e1e1e1;
 }
+ 
+
+.ourmissionpremium {
+  display: none;
+  opacity: 0;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.ourmissionpremium.active {
+  display: block;
+  opacity: 1;
+}
+
+
+

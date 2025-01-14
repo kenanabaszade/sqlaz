@@ -41,9 +41,9 @@ showPremiumOurGoalBtn.addEventListener("click", () => {
   }
 });
 
-
-const showOurMissionBtn= document.getElementById("showOurMission");
+const showOurMissionBtn = document.getElementById("showOurMission");
 const ourmissioncontainer = document.getElementById("ourmissioncontainer");
+const ourmissionback = document.getElementById("ourmissionback");
 showOurMissionBtn.addEventListener("click", () => {
   detailsContainer.classList.add("fade-out");
 
@@ -59,6 +59,23 @@ showOurMissionBtn.addEventListener("click", () => {
 
 const ourgoalbackbtn = document.getElementById("ourgoalback");
 
+ourmissionback.addEventListener("click", () => {
+  detailsContainer.classList.remove("fade-out");
+  detailsContainer.style.opacity = "1";
+  detailsContainer.style.display = "grid";
+  ourmissioncontainer.classList.remove("fade-in");
+  ourmissioncontainer.classList.remove("active");
+  ourmissioncontainer.classList.remove("fade-in");
+});
+
+ourgoalbackbtn.addEventListener("click", () => {
+  detailsContainer.classList.remove("fade-out");
+  detailsContainer.classList.remove("fade-in");
+  detailsContainer.style.display = "grid";
+  detailsContainer.style.opacity = "1";
+  premiumContainerOurGoal.classList.remove("active");
+  premiumContainerOurGoal.classList.remove("fade-in");
+});
 ourgoalbackbtn.addEventListener("click", () => {
   detailsContainer.classList.remove("fade-out");
   detailsContainer.classList.remove("fade-in");
@@ -113,7 +130,6 @@ newsbtn.addEventListener("click", () => {
     detailsContainer2.style.display = "none";
     newsheadcontainer.style.display = "block";
     newscontainer.classList.add("active");
-
   }
 });
 
@@ -124,7 +140,7 @@ newsback.addEventListener("click", () => {
   detailsContainer2.style.opacity = "1";
   newscontainer.classList.remove("active");
 });
- 
+
 window.addEventListener("scroll", function () {
   const scrollToTopBtn = document.getElementById("scrollToTop");
   if (window.scrollY > 300) {

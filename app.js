@@ -117,10 +117,15 @@ gallerybtn.addEventListener("click", () => {
 });
 
 const newsbtn = document.getElementById("newsbtn");
+const consultinqbtn = document.getElementById("consultinqbtn");
 const newsback = document.getElementById("newsback");
+const consultinqback = document.getElementById("consultinqback");
 const newscontainer = document.getElementById("newscontainer");
 const newsheadcontainer = document.getElementById("newsheadercontainer");
+const consultingcontainer = document.getElementById("consultingcontainer");
+const consultinqhead = document.getElementById("consultinqhead");
 const detailsContainer2 = document.getElementById("detailsContainer2");
+const consultingheadercontainer = document.getElementById("consultingheadercontainer");
 
 newsbtn.addEventListener("click", () => {
   detailsContainer2.classList.add("fade-out");
@@ -133,12 +138,29 @@ newsbtn.addEventListener("click", () => {
   }
 });
 
+consultinqbtn.addEventListener("click", () => {
+  detailsContainer2.classList.add("fade-out");
+  detailsContainer2.style.display = "none";
+  consultingcontainer.classList.add("active");
+  consultinqhead.classList.add("active");
+  consultingheadercontainer.classList.add("active");
+  consultinqback.classList.add("active");
+});
+
 newsback.addEventListener("click", () => {
   detailsContainer2.classList.remove("fade-out");
   detailsContainer2.style.display = "grid";
   newsheadcontainer.style.display = "none";
   detailsContainer2.style.opacity = "1";
   newscontainer.classList.remove("active");
+});
+consultinqback.addEventListener("click", () => {
+  detailsContainer2.classList.remove("fade-out");
+  consultinqhead.classList.remove("active");
+  newscontainer.classList.remove("active");
+  consultinqback.classList.remove("active");
+  detailsContainer2.style.display = "grid";
+  detailsContainer2.style.opacity = "1";
 });
 
 window.addEventListener("scroll", function () {

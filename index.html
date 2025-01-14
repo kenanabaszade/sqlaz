@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SQL Konsultinq şirkəti</title> 
+    <title>SQL Konsultinq şirkəti</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -99,7 +99,7 @@
       <div class="card card2">
         <img src="/sql/foto/2.png" alt="Image" />
       </div>
-      
+
       <div class="card card3" style="cursor: pointer" id="showPremiumOurGoalBtn">
         <div class="text-area">
           <div class="px-3 mt-4">
@@ -149,8 +149,7 @@
       <div class="gallery-item item-building">
         <a class="fancybox-trigger" data-fancybox="gallery" data-src="/gallery/5.jpg" href="javascript:;">
           <div class="top-right-icon"></div>
-          <div class="overlay center-overlay">
-          </div>
+          <div class="overlay center-overlay"></div>
         </a>
       </div>
 
@@ -169,9 +168,7 @@
       <div class="gallery-item item-coder">
         <a class="fancybox-trigger" data-fancybox="gallery" data-src="/gallery/4.jpg" href="javascript:;">
           <div class="top-right-icon"></div>
-          <div class="overlay center-overlay">
-            
-          </div>
+          <div class="overlay center-overlay"></div>
         </a>
       </div>
 
@@ -179,9 +176,7 @@
       <div class="gallery-item item-laptop">
         <a class="fancybox-trigger" data-fancybox="gallery" data-src="/gallery/3.jpg" href="javascript:;">
           <div class="top-right-icon"></div>
-          <div class="overlay center-overlay">
-            
-          </div>
+          <div class="overlay center-overlay"></div>
         </a>
       </div>
 
@@ -189,9 +184,7 @@
       <div class="gallery-item item-structure">
         <a class="fancybox-trigger" data-fancybox="gallery" data-src="/gallery/1.jpg" href="javascript:;">
           <div class="top-right-icon"></div>
-          <div class="overlay center-overlay">
-            
-          </div>
+          <div class="overlay center-overlay"></div>
         </a>
       </div>
     </section>
@@ -358,10 +351,19 @@
             <div class="carousel-item active">
               <div class="d-flex justify-content-between">
                 <div class="logo-pill">
-                  <img src="/sql/icon/pashabank.png" alt="Pasha Bank" />
+                  <img src="/logos/1.png" alt="Pasha Bank" />
                 </div>
                 <div class="logo-pill">
-                  <img src="/sql/icon/ziraat.png" alt="Ziraat Bankasi" />
+                  <img src="/logos/10.png" alt="Ziraat Bankasi" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/11.png" alt="Ziraat Bankasi" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/12.png" alt="Ziraat Bankasi" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/13.png" alt="Ziraat Bankasi" />
                 </div>
               </div>
             </div>
@@ -369,13 +371,32 @@
             <div class="carousel-item">
               <div class="d-flex justify-content-between">
                 <div class="logo-pill">
-                  <img src="/sql/icon/pashabank.png" alt="Pasha Bank" />
+                  <img src="/logos/2.png" alt="Pasha Bank" />
                 </div>
                 <div class="logo-pill">
-                  <img src="/sql/icon/ziraat.png" alt="Ziraat Bankasi" />
+                  <img src="/logos/3.png" alt="Ziraat Bankasi" />
                 </div>
                 <div class="logo-pill">
-                  <img src="/sql/icon/ziraat.png" alt="Ziraat Bankasi" />
+                  <img src="/logos/4.png" alt="Ziraat Bankasi" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/5.png" alt="Ziraat Bankasi" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-between">
+                <div class="logo-pill">
+                  <img src="/logos/7.png" alt="Pasha Bank" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/8.png" alt="Ziraat Bankasi" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/9.png" alt="Ziraat Bankasi" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/6.png" alt="Ziraat Bankasi" />
                 </div>
               </div>
             </div>
@@ -414,7 +435,7 @@
         </div>
       </div>
 
-      <div class="card secondcard4">
+      <div class="card secondcard4" id="consultinqbtn" style="cursor: pointer">
         <div class="text-area">
           <div class="px-3 pt-3">
             <div class="bubble-header consultingservice">Konsultasiya mərkəzi</div>
@@ -426,7 +447,6 @@
           </div>
         </div>
       </div>
-
       <div class="card secondcard5" id="newsbtn" style="cursor: pointer">
         <div class="secondcard5-header">
           <div class="gallery-outline">Xəbərlər</div>
@@ -454,6 +474,43 @@
       </a>
     </div>
 
+    <div class="container consultingservices" id="consultingheadercontainer" style="display: none">
+      <button class="gobackbtn consultinq" id="consultinqback"><span class="arrow">&#8592;</span> Geri</button>
+      <div class="premium-subtitle d-flex align-items-center justify-content-between">
+        <h2 class="premium-heading consultinq" id="consultinqhead">Konsultasiya mərkəzi</h2>
+      </div>
+    </div>
+    
+    <div class="cards-grid py-4" id="consultingcontainer">
+      <div class="card-3d">
+        <div class="img-3d-wrapper">
+          <img src="/3dimages/1 (2).png" alt="Fərqli sistemlərin inteqrasiyası 3D icon" class="img-3d" />
+        </div>
+        <h3>Fərqli sistemlərin inteqrasiyası</h3>
+      </div>
+
+      <div class="card-3d">
+        <div class="img-3d-wrapper">
+          <img src="/3dimages/2 (2).png" alt="VB-nin idarə edilməsi üzrə konsaltinq və dəstək xidmətləri 3D icon" class="img-3d" />
+        </div>
+        <h3>VB-nin idarə edilməsi</h3>
+      </div>
+
+      <div class="card-3d">
+        <div class="img-3d-wrapper">
+          <img src="/3dimages/3 (2).png" alt="Data Analytics 3D icon" class="img-3d" />
+        </div>
+        <h3>Data Analytics</h3>
+      </div>
+
+      <div class="card-3d">
+        <div class="img-3d-wrapper">
+          <img src="/3dimages/4 (2).png" alt="İT təlimləri 3D icon" class="img-3d" />
+        </div>
+        <h3>İT təlimləri</h3>
+      </div>
+    </div>
+
     <!-- Our news -->
     <div class="container" id="newsheadercontainer" style="display: none">
       <button class="gobackbtn news" id="newsback"><span class="arrow">&#8592;</span> Geri</button>
@@ -462,9 +519,9 @@
         <p style="border-bottom: 1px solid">ŞİRKƏT HAQQINDA ƏTRAFLI MƏLUMAT</p>
       </div>
     </div>
+
     <section class="news-container" id="newscontainer">
       <!-- Card 1 -->
-
       <div class="news-card">
         <div class="card-image">
           <img src="/news/foto1.jpg" alt="Innovation Meetup" />
@@ -488,6 +545,7 @@
           <button class="hover-btn">Ətraflı</button>
         </div>
       </div>
+
       <!-- Card 3 -->
       <div class="news-card">
         <div class="card-image">

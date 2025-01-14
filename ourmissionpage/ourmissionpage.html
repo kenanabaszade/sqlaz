@@ -8,236 +8,236 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="/style.css" />
     <style>
-         /* ----- Premium Button ----- */
-    .premium-btn {
-      background-color: #ffd700;
-      border: none;
-      font-weight: 600;
-      padding: 0.75rem 1.5rem;
-      border-radius: 50px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .premium-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    /* ----- Details Section ----- */
-    .details-section {
-      background-color: #fff;
-    }
-    .details-section h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #1e3c72;
-    }
-    .details-section p {
-      font-size: 1.1rem;
-      line-height: 1.75;
-    }
-    .details-section .list-group-item {
-      border: none;
-      padding-left: 0;
-      font-size: 1rem;
-    }
-    .details-section img {
-      transition: transform 0.5s ease;
-    }
-    .details-section img:hover {
-      transform: scale(1.02);
-    }
-
-    /* ----- About Us Section ----- */
-    #haqqimizda {
-      background-color: #f9fafb;
-    }
-    #haqqimizda h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #2a5298;
-    }
-    #haqqimizda li {
-      font-size: 1.1rem;
-      padding: 0.5rem 0;
-    }
-
-    /* ----- Team Section ----- */
-    #komanda {
-      background-color: #fff;
-    }
-    #komanda h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #1e3c72;
-    }
-    .card-person {
-      border: none;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s;
-      background-color: #fefefe;
-    }
-    .card-person:hover {
-      transform: translateY(-10px);
-      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
-    }
-    .card-person img {
-      object-fit: cover;
-      height: 300px;
-      transition: transform 0.4s ease;
-    }
-    .card-person:hover img {
-      transform: scale(1.05);
-    }
-    .card-person .card-body {
-      padding: 1.5rem;
-    }
-    .card-person .card-title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #1e3c72;
-    }
-    .card-person ul {
-      padding-left: 1.2rem;
-      margin-bottom: 0;
-    }
-    .card-person ul li {
-      font-size: 0.95rem;
-      list-style-type: disc;
-    }
-
-
-
-    .split-section {
-      display: flex;
-      flex-wrap: wrap;
-      min-height: 100vh;
-      overflow: hidden;
-    }
-    .split-left,
-    .split-right {
-      flex: 1 1 50%;
-      position: relative;
-    }
-    /* Left side: full-height background image with a dark overlay */
-    .split-left {
-      background: url('/ourmission/1.jpg') no-repeat center center;
-      background-size: cover;
-    }
-    .split-left::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: rgba(0, 0, 0, 0.5);
-    }
-    /* Right side: content container with a slight slide-in animation */
-    .split-right {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem;
-      background: #fff;
-    }
-    .content-container {
-      max-width: 600px;
-      width: 100%;
-      animation: slideUp 0.8s ease-out;
-    }
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .content-container h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-      color: #1e3c72;
-    }
-    .content-container p {
-      margin-bottom: 2rem;
-    }
-    
-    /* Cards container for mission, vision, and values */
-    .card-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
-    .info-card {
-      background: #ffffff;
-      border-radius: 15px;
-      padding: 1.5rem;
-      flex: 1 1 calc(33.333% - 1.5rem);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .info-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    }
-    .info-card h4 {
-      margin-bottom: 0.75rem;
-      color: #2a5298;
-    }
-    .info-card ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .info-card ul li {
-      position: relative;
-      padding-left: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .info-card ul li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: #ffd700;
-      font-size: 1.1rem;
-    }
-    
-    /* Responsive adjustments */
-    @media (max-width: 992px) {
-      .info-card {
-        flex: 1 1 100%;
+      /* ----- Premium Button ----- */
+      .premium-btn {
+        background-color: #ffd700;
+        border: none;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        transition: transform 0.3s, box-shadow 0.3s;
       }
-    }
-    @media (max-width: 768px) {
+      .premium-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      /* ----- Details Section ----- */
+      .details-section {
+        background-color: #fff;
+      }
+      .details-section h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #1e3c72;
+      }
+      .details-section p {
+        font-size: 1.1rem;
+        line-height: 1.75;
+      }
+      .details-section .list-group-item {
+        border: none;
+        padding-left: 0;
+        font-size: 1rem;
+      }
+      .details-section img {
+        transition: transform 0.5s ease;
+      }
+      .details-section img:hover {
+        transform: scale(1.02);
+      }
+
+      /* ----- About Us Section ----- */
+      #haqqimizda {
+        background-color: #f9fafb;
+      }
+      #haqqimizda h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2a5298;
+      }
+      #haqqimizda li {
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+      }
+
+      /* ----- Team Section ----- */
+      #komanda {
+        background-color: #fff;
+      }
+      #komanda h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1e3c72;
+      }
+      .card-person {
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        background-color: #fefefe;
+      }
+      .card-person:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+      }
+      .card-person img {
+        object-fit: cover;
+        height: 300px;
+        transition: transform 0.4s ease;
+      }
+      .card-person:hover img {
+        transform: scale(1.05);
+      }
+      .card-person .card-body {
+        padding: 1.5rem;
+      }
+      .card-person .card-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #1e3c72;
+      }
+      .card-person ul {
+        padding-left: 1.2rem;
+        margin-bottom: 0;
+      }
+      .card-person ul li {
+        font-size: 0.95rem;
+        list-style-type: disc;
+      }
+
       .split-section {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        overflow: hidden;
       }
       .split-left,
       .split-right {
-        flex: 1 1 100%;
-        min-height: 50vh;
+        flex: 1 1 50%;
+        position: relative;
       }
-      .content-container h1 {
-        font-size: 2.4rem;
+      /* Left side: full-height background image with a dark overlay */
+      .split-left {
+        background: url("/ourmission/1.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      .split-left::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      /* Right side: content container with a slight slide-in animation */
+      .split-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+        background: #fff;
       }
       .content-container {
-        padding: 1.5rem;
+        max-width: 600px;
+        width: 100%;
+        animation: slideUp 0.8s ease-out;
       }
-    }
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .content-container h1 {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+        color: #1e3c72;
+      }
+      .content-container p {
+        margin-bottom: 2rem;
+      }
 
+      /* Cards container for mission, vision, and values */
+      .card-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+      .info-card {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 1.5rem;
+        flex: 1 1 calc(33.333% - 1.5rem);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .info-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      }
+      .info-card h4 {
+        margin-bottom: 0.75rem;
+        color: #2a5298;
+      }
+      .info-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .info-card ul li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .info-card ul li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #ffd700;
+        font-size: 1.1rem;
+      }
 
+      /* Responsive adjustments */
+      @media (max-width: 992px) {
+        .info-card {
+          flex: 1 1 100%;
+        }
+      }
+      @media (max-width: 768px) {
+        .split-section {
+          flex-direction: column;
+        }
+        .split-left,
+        .split-right {
+          flex: 1 1 100%;
+          min-height: 50vh;
+        }
+        .content-container h1 {
+          font-size: 2.4rem;
+        }
+        .content-container {
+          padding: 1.5rem;
+        }
+      }
 
-
-    @media (max-width: 768.98px) {
-   .contact-section {
-    display: block;
-   }
-   .left-contact {
-    display: block;
-   }
-   .nav-grid {
-    display: block;
-   }
-            }
-
+      @media (max-width: 768.98px) {
+        .contact-section {
+          display: block;
+        }
+        .left-contact {
+          display: block;
+        }
+        .nav-grid {
+          display: block;
+        }
+      }
     </style>
     <title>Document</title>
   </head>
@@ -262,25 +262,25 @@
         </select>
       </div>
     </header>
-   <!-- Navbar -->
-   <nav class="navbar navbarmain navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">SQL Konsultinq</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">Haqqımızda</a></li>
-          <li class="nav-item"><a class="nav-link" href="#mission">Missiyamız</a></li>
-          <li class="nav-item"><a class="nav-link" href="#training">Təlim</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Qaleriya</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Əlaqə</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
+    <!-- Navbar -->
+    <nav class="navbar navbarmain navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">SQL Konsultinq</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">Haqqımızda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mission">Missiyamız</a></li>
+            <li class="nav-item"><a class="nav-link" href="#training">Təlim</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Qaleriya</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Əlaqə</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- Navbar -->
     <header class="navbar">
@@ -294,11 +294,11 @@
           </a>
         </div>
         <nav class="nav-links">
-          <a href="#detailsContainer">Ümumi məlumat</a>
-          <a href="#detailsContainer2">Servislər</a>
-          <a href="#carousellogos">Partnyorlar</a>
-          <a href="#detailsContainer2">Xəbərlər</a>
-          <a href="#detailsContainer2">Kitab</a>
+          <a href="/#detailsContainer">Ümumi məlumat</a>
+          <a href="/#detailsContainer2">Servislər</a>
+          <a href="/#carousellogos">Partnyorlar</a>
+          <a href="/#detailsContainer2">Xəbərlər</a>
+          <a href="/#detailsContainer2">Kitab</a>
         </nav>
         <div class="search-bar">
           <input type="text" placeholder="Search" />
@@ -310,46 +310,38 @@
     </header>
 
     <section class="split-section">
-        <!-- Left Side: Image with overlay -->
-        <div class="split-left"></div>
-        
-        <!-- Right Side: Text and content -->
-        <div class="split-right">
-          <div class="content-container">
-            <h1>Missiyamız</h1>
-            <p>
-              SQL.az texnologiya sahəsində ixtisaslaşmış təlim və məsləhət xidməti təminatçısıdır. SQL.az-ın məqsədi müştərilərinə innovativ həllər təqdim etməklə müəssisələrin rəqəmsal transformasiya proseslərini asanlaşdırmaqdır. Bu missiya ilə biz SQL.az müştərilərimizə ən son texnologiyalar və ən yaxşı təcrübələri təqdim etməklə bizneslərini böyütmək və rəqabət üstünlüyü əldə etmək üçün dəstək veririk.
-            </p>
-            <div class="card-group">
-              <!-- Mission Card -->
-              <div class="info-card">
-                <h4>Bizim Missiyamız</h4>
-                <p>
-                  Müştərilərimizə texnologiyadan səmərəli istifadə edərək bizneslərini inkişaf etdirmək üçün lazım olan bilik, bacarıq və resursları təqdim etmək.
-                </p>
-              </div>
-              <!-- Vision Card -->
-              <div class="info-card">
-                <h4>Bizim Baxışımız (Vizyonumuz)</h4>
-                <p>
-                  Bütün dünyada texnologiya sahəsində istinad nöqtəsi olmaq və müştərilərimizin uğurunu dəstəkləmək.
-                </p>
-              </div>
-              <!-- Values Card -->
-              <div class="info-card">
-                <h4>Bizim Dəyərlərimiz</h4>
-                <p>Dəyərlərimiz işimizin əsasını təşkil edir:</p>
-                <ul>
-                  <li>Müştəri yönümlü yanaşma</li>
-                  <li>Keyfiyyət</li>
-                  <li>İnnovasiya</li>
-                  <li>Əməkdaşlıq</li>
-                </ul>
-              </div>
+      <div class="split-left"></div>
+      <div class="split-right">
+        <div class="content-container">
+          <h1>Missiyamız</h1>
+          <p>
+            SQL.az texnologiya sahəsində ixtisaslaşmış təlim və məsləhət xidməti təminatçısıdır. SQL.az-ın məqsədi müştərilərinə innovativ həllər təqdim etməklə müəssisələrin rəqəmsal transformasiya
+            proseslərini asanlaşdırmaqdır. Bu missiya ilə biz SQL.az müştərilərimizə ən son texnologiyalar və ən yaxşı təcrübələri təqdim etməklə bizneslərini böyütmək və rəqabət üstünlüyü əldə etmək
+            üçün dəstək veririk.
+          </p>
+          <div class="card-group">
+            <div class="info-card">
+              <h4>Bizim Missiyamız</h4>
+              <p>Müştərilərimizə texnologiyadan səmərəli istifadə edərək bizneslərini inkişaf etdirmək üçün lazım olan bilik, bacarıq və resursları təqdim etmək.</p>
+            </div>
+            <div class="info-card">
+              <h4>Bizim Baxışımız (Vizyonumuz)</h4>
+              <p>Bütün dünyada texnologiya sahəsində istinad nöqtəsi olmaq və müştərilərimizin uğurunu dəstəkləmək.</p>
+            </div>
+            <div class="info-card">
+              <h4>Bizim Dəyərlərimiz</h4>
+              <p>Dəyərlərimiz işimizin əsasını təşkil edir:</p>
+              <ul>
+                <li>Müştəri yönümlü yanaşma</li>
+                <li>Keyfiyyət</li>
+                <li>İnnovasiya</li>
+                <li>Əməkdaşlıq</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
     <section class="contact-section py-4">
       <div class="contact-container">
@@ -394,11 +386,9 @@
     <a href="https://wa.me/+994559409565?text=Salam kursla bağlı məlumat almaq istəyərdim." target="_blank" class="whatsapp-float" rel="noopener noreferrer">
       <i class="fab fa-whatsapp whatsapp-icon"></i>
     </a>
-    <!-- Footer -->
     <footer class="bg-white text-white text-center py-2">
       <p>© 2024 SQL.AZ Konsultinq şirkəti. Bütün hüquqlar qorunur.</p>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>

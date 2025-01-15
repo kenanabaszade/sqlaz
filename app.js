@@ -125,7 +125,11 @@ const newsheadcontainer = document.getElementById("newsheadercontainer");
 const consultingcontainer = document.getElementById("consultingcontainer");
 const consultinqhead = document.getElementById("consultinqhead");
 const detailsContainer2 = document.getElementById("detailsContainer2");
+const ourtrainingcontainer = document.getElementById("ourtrainingcontainer");
 const consultingheadercontainer = document.getElementById("consultingheadercontainer");
+const trainingbackbtn = document.getElementById("trainingbackbtn");
+
+const trainingbtn = document.getElementById("trainingbtn");
 
 newsbtn.addEventListener("click", () => {
   detailsContainer2.classList.add("fade-out");
@@ -147,19 +151,42 @@ consultinqbtn.addEventListener("click", () => {
   consultinqback.classList.add("active");
 });
 
+trainingbtn.addEventListener("click", () => {
+  detailsContainer2.classList.add("fade-out");
+  detailsContainer2.style.display = "none";
+  ourtrainingcontainer.classList.add("active");
+  consultinqback.classList.add("active");
+});
+
 newsback.addEventListener("click", () => {
   detailsContainer2.classList.remove("fade-out");
   detailsContainer2.style.display = "grid";
   newsheadcontainer.style.display = "none";
   detailsContainer2.style.opacity = "1";
   newscontainer.classList.remove("active");
+
+
+ 
 });
+
 consultinqback.addEventListener("click", () => {
   detailsContainer2.classList.remove("fade-out");
   consultinqhead.classList.remove("active");
   newscontainer.classList.remove("active");
   consultinqback.classList.remove("active");
   detailsContainer2.style.display = "grid";
+  detailsContainer2.style.opacity = "1";
+});
+
+trainingbackbtn.addEventListener("click", () => {
+  detailsContainer2.classList.remove("fade-out");
+  consultinqhead.classList.remove("active");
+  newscontainer.classList.remove("active");
+  consultinqback.classList.remove("active");
+  detailsContainer2.style.display = "grid";
+
+  ourtrainingcontainer.classList.remove("active");
+  consultinqback.classList.remove("active");
   detailsContainer2.style.opacity = "1";
 });
 

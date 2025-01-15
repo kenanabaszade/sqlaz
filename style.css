@@ -529,7 +529,7 @@ footer {
 
 /* The text area on the right */
 .text-area {
-  flex: 1;
+  flex: 3;
   display: flex;
   flex-direction: column;
 }

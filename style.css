@@ -1430,6 +1430,11 @@ p {
   .left-contact {
     width: 100%;
     margin-bottom: 20px;
+    display: block;
+  }
+
+  .nav-grid {
+    display: block;
   }
   .right-contact {
     width: 100%;
@@ -1501,6 +1506,13 @@ p {
     grid-column: 1;
     grid-row: auto;
   }
+}
+@media (max-width: 600px) {
+  .contact-info {
+    display: block;
+  }
+
+
 }
 
 @media (max-width: 768px) {

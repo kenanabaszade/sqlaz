@@ -148,6 +148,7 @@ trainingbtn.addEventListener("click", () => {
   detailsContainer2.classList.add("fade-out");
   detailsContainer2.style.display = "none";
   ourtrainingcontainer.classList.add("active");
+  consultinqback.classList.remove("active");
   consultinqback.classList.add("active");
 });
 

@@ -194,8 +194,8 @@ footer {
 }
 
 .header .social-icons img {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
@@ -231,6 +231,7 @@ footer {
 .navbar .nav-links {
   display: flex;
   gap: 75px;
+  text-transform: uppercase;
   align-items: center;
 }
 
@@ -578,14 +579,13 @@ footer {
 
 /* Gray footer bar */
 .card4-footer {
-  background-color: #dcdcdc;
+  background-color: #bcbcbc;
   text-align: center;
   padding: 10px;
 }
 .card4-footer a {
   text-decoration: none;
   font-size: 0.9rem;
-  font-weight: bold;
   color: #333;
 }
 .card4-footer a:hover {
@@ -636,13 +636,13 @@ footer {
 
 .card5-header {
   text-align: center;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .secondcard5-header {
   text-align: center;
-  padding: 20px;
-  margin-top: 35px;
+  padding: 0 52px;
+  margin-top: 25px;
 }
 
 .gallery-outline {
@@ -828,10 +828,10 @@ footer {
 }
 
 .bubble-header {
-  padding: 12px;
+  padding: 14.4px;
   color: #fff;
   border: #ff0090;
-  width: 175px;
+  width: 185px;
   border-radius: 20px;
   text-align: center;
   font-size: 12px;
@@ -888,7 +888,7 @@ p {
 /* Footer link area */
 .card-footer {
   margin-top: auto;
-  background-color: #e0e0e0;
+  background-color: #bcbcbc;
   text-align: center;
   padding: 10px;
 }
@@ -1098,7 +1098,7 @@ p {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 40px;
+  bottom: 55px;
   right: 20px;
   background-color: #25d366;
   color: #ffffff;

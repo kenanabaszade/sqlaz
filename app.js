@@ -76,14 +76,7 @@ ourgoalbackbtn.addEventListener("click", () => {
   premiumContainerOurGoal.classList.remove("active");
   premiumContainerOurGoal.classList.remove("fade-in");
 });
-ourgoalbackbtn.addEventListener("click", () => {
-  detailsContainer.classList.remove("fade-out");
-  detailsContainer.classList.remove("fade-in");
-  detailsContainer.style.display = "grid";
-  detailsContainer.style.opacity = "1";
-  premiumContainerOurGoal.classList.remove("active");
-  premiumContainerOurGoal.classList.remove("fade-in");
-});
+
 
 const showGalleryBtn = document.getElementById("showgallery");
 const gallerycontainer = document.getElementById("gallerycontainer");

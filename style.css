@@ -184,6 +184,7 @@ footer {
   font-weight: 400;
   letter-spacing: 2px;
   color: #333;
+  text-transform: uppercase;
 }
 
 .header .social-icons a {
@@ -856,7 +857,7 @@ footer {
 }
 
 .ourtraining {
-  background-color: #dea431;
+  background-color: #1bc6b1;
 }
 
 .consultingservice {
@@ -956,10 +957,10 @@ p {
 .contact-section {
   width: 100%;
   background-color: #7e7e7e;
-  padding: 40px 0;
+  padding: 30px 10px 10px 10px;
 }
 .contact-container {
-  max-width: 1300px;
+  max-width: 1338px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -1020,12 +1021,17 @@ p {
   padding: 10px 15px;
   border-radius: 4px;
   display: flex;
+  width: 220px;
   align-items: center;
   font-size: 14px;
 }
 .info-block span {
   font-weight: bold;
   margin-right: 8px;
+}
+.info-block:nth-child(2) span {
+  font-weight: bold;
+  margin-right: 20px;
 }
 
 .nav-links {
@@ -1098,7 +1104,7 @@ p {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 55px;
+  bottom: 80px;
   right: 20px;
   background-color: #25d366;
   color: #ffffff;

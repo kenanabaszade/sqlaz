@@ -173,6 +173,7 @@ consultinqback.addEventListener("click", () => {
   detailsContainer2.classList.remove("fade-out");
   consultinqhead.classList.remove("active");
   newscontainer.classList.remove("active");
+  consultingcontainer.classList.remove("active");
   consultinqback.classList.remove("active");
   detailsContainer2.style.display = "grid";
   detailsContainer2.style.opacity = "1";

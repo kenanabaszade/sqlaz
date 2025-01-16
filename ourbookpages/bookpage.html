@@ -7,385 +7,191 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="/style.css" />
-    <style>
-         /* ----- Premium Button ----- */
-    .premium-btn {
-      background-color: #ffd700;
-      border: none;
-      font-weight: 600;
-      padding: 0.75rem 1.5rem;
-      border-radius: 50px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .premium-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    }
 
-    /* ----- Details Section ----- */
-    .details-section {
-      background-color: #fff;
-    }
-    .details-section h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #1e3c72;
-    }
-    .details-section p {
-      font-size: 1.1rem;
-      line-height: 1.75;
-    }
-    .details-section .list-group-item {
-      border: none;
-      padding-left: 0;
-      font-size: 1rem;
-    }
-    .details-section img {
-      transition: transform 0.5s ease;
-    }
-    .details-section img:hover {
-      transform: scale(1.02);
-    }
-    .hero {
-      position: relative;
-      background-image: url('https://via.placeholder.com/1600x900?text=Kitab+Kapak');
-      background-size: cover;
-      background-position: center;
-      height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(30, 60, 114, 0.7);
-    }
-    .hero-content {
-      position: relative;
-      text-align: center;
-      color: #fff;
-      z-index: 1;
-    }
-    .hero-content h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    .hero-content p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    /* Details Section */
-    .details-section {
-      padding: 4rem 0;
-    }
-    .details-img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      transition: transform 0.4s ease;
-    }
-    .details-img:hover {
-      transform: scale(1.02);
-    }
-    .details-content h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
-      color: #1e3c72;
-      margin-bottom: 1rem;
-    }
-    .details-content p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      margin-bottom: 1rem;
-    }
-    .download-link {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.8rem 2rem;
-      background-color: #1e3c72;
-      color: #fff;
-      font-weight: 600;
-      border-radius: 50px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      text-decoration: none;
-    }
-    .download-link:hover {
-      background-color: #15325d;
-      transform: translateY(-3px);
-    }
-    @media (max-width: 768px) {
-      .hero-content h1 {
-        font-size: 2.2rem;
+    <style>
+      /* ----- Premium Button (Gold) ----- */
+      .premium-btn {
+        background-color: #ffd700;
+        border: none;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        transition: transform 0.3s, box-shadow 0.3s;
       }
-      .hero-content p {
-        font-size: 1rem;
+      .premium-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
       }
-      .details-content h2 {
+
+      /* ----- Flashing Green Button ----- */
+      .flash-green-btn {
+        display: inline-block;
+        margin-left: 15px; /* spacing from the 'Kitabı Yüklə' link */
+        border: 2px solid #00aa00; /* Good green border */
+        color: #00aa00;
+        background-color: transparent;
+        font-weight: 600;
+        padding: 0.7rem 1.4rem;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        animation: greenFlash 1.5s infinite; /* the "flash" animation */
+      }
+      .flash-green-btn:hover {
+        background-color: #00aa00; /* Make background green on hover */
+        color: #fff;
+      }
+      /* Keyframes for subtle flashing effect */
+      @keyframes greenFlash {
+        0% {
+          box-shadow: 0 0 8px #00aa00;
+        }
+        50% {
+          box-shadow: 0 0 16px #00aa00;
+        }
+        100% {
+          box-shadow: 0 0 8px #00aa00;
+        }
+      }
+
+      /* ----- Details Section ----- */
+      .details-section {
+        padding: 3rem 0;
+        background-color: #fff;
+      }
+      .details-section h2 {
         font-size: 2rem;
+        font-weight: 700;
+        color: #1e3c72;
+      }
+      .details-section p {
+        font-size: 1.1rem;
+        line-height: 1.75;
+      }
+      .details-section img {
+        transition: transform 0.5s ease;
+      }
+      .details-section img:hover {
+        transform: scale(1.02);
+      }
+
+      .details-img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        transition: transform 0.4s ease;
+      }
+      .details-img:hover {
+        transform: scale(1.02);
+      }
+
+      .details-content h2 {
+        font-size: 2.5rem;
+        color: #1e3c72;
+        margin-bottom: 1rem;
       }
       .details-content p {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
       }
-    }
-    /* ----- About Us Section ----- */
-    #haqqimizda {
-      background-color: #f9fafb;
-    }
-    #haqqimizda h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #2a5298;
-    }
-    #haqqimizda li {
-      font-size: 1.1rem;
-      padding: 0.5rem 0;
-    }
 
-    /* ----- Team Section ----- */
-    #komanda {
-      background-color: #fff;
-    }
-    #komanda h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #1e3c72;
-    }
-    .card-person {
-      border: none;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s;
-      background-color: #fefefe;
-    }
-    .card-person:hover {
-      transform: translateY(-10px);
-      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
-    }
-    .card-person img {
-      object-fit: cover;
-      height: 300px;
-      transition: transform 0.4s ease;
-    }
-    .card-person:hover img {
-      transform: scale(1.05);
-    }
-    .card-person .card-body {
-      padding: 1.5rem;
-    }
-    .card-person .card-title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #1e3c72;
-    }
-    .card-person ul {
-      padding-left: 1.2rem;
-      margin-bottom: 0;
-    }
-    .card-person ul li {
-      font-size: 0.95rem;
-      list-style-type: disc;
-    }
-
-
-
-    .split-section {
-      display: flex;
-      flex-wrap: wrap;
-      min-height: 100vh;
-      overflow: hidden;
-    }
-    .split-left,
-    .split-right {
-      flex: 1 1 50%;
-      position: relative;
-    }
-    /* Left side: full-height background image with a dark overlay */
-    .split-left {
-      background: url('/ourmission/1.jpg') no-repeat center center;
-      background-size: cover;
-    }
-    .split-left::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: rgba(0, 0, 0, 0.5);
-    }
-    /* Right side: content container with a slight slide-in animation */
-    .split-right {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem;
-      background: #fff;
-    }
-    .content-container {
-      max-width: 600px;
-      width: 100%;
-      animation: slideUp 0.8s ease-out;
-    }
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .content-container h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-      color: #1e3c72;
-    }
-    .content-container p {
-      margin-bottom: 2rem;
-    }
-    
-    /* Cards container for mission, vision, and values */
-    .card-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
-    .info-card {
-      background: #ffffff;
-      border-radius: 15px;
-      padding: 1.5rem;
-      flex: 1 1 calc(33.333% - 1.5rem);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .info-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    }
-    .info-card h4 {
-      margin-bottom: 0.75rem;
-      color: #2a5298;
-    }
-    .info-card ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .info-card ul li {
-      position: relative;
-      padding-left: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .info-card ul li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: #ffd700;
-      font-size: 1.1rem;
-    }
-    
-    /* Responsive adjustments */
-    @media (max-width: 992px) {
-      .info-card {
-        flex: 1 1 100%;
+      .download-link {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 0.8rem 2rem;
+        background-color: #1e3c72;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 50px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        text-decoration: none;
       }
-    }
-    @media (max-width: 768px) {
-      .split-section {
-        flex-direction: column;
+      .download-link:hover {
+        background-color: #15325d;
+        transform: translateY(-3px);
       }
-      .split-left,
-      .split-right {
-        flex: 1 1 100%;
-        min-height: 50vh;
+
+      /* Make sure the new green button stays on a new line only if needed */
+      .download-area {
+        margin-top: 1.5rem;
       }
-      .content-container h1 {
-        font-size: 2.4rem;
+
+      /* Header & Navbar styling from your code */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
       }
-      .content-container {
-        padding: 1.5rem;
+      .header .brand {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: #333;
+        text-transform: uppercase;
       }
-    }
+      .header .social-icons img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
 
+      .navbar {
+        background-color: #7e7e7e;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .navbar .nav-links a {
+        margin-right: 20px;
+      }
 
+      @media (max-width: 768px) {
+        .details-content h2 {
+          font-size: 2rem;
+        }
+        .details-content p {
+          font-size: 1rem;
+        }
+      }
+      /* Contact Section, etc. from your code below... */
 
-    .page-header {
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: #fff;
-      padding: 2rem 0;
-      text-align: center;
-    }
-    .page-header h1 {
-      margin: 0;
-      font-size: 2.75rem;
-      font-weight: 700;
-    }
-    .card {
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      background-color: #fff;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-    }
-    .card img {
-      object-fit: cover;
-      height: 300px;
-      width: 100%;
-    }
-    .card-body {
-      padding: 1.5rem;
-    }
-    .download-btn {
-      background-color: #1e3c72;
-      color: #fff;
-      font-weight: 600;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 50px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-    .download-btn:hover {
-      background-color: #15325d;
-      transform: scale(1.03);
-    }
-    .book-title {
-      font-size: 1.5rem;
-      color: #1e3c72;
-      font-weight: 700;
-    }
-    .book-description {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-    @media (max-width: 768px) {
-      .card img { height: 200px; }
-      .book-title { font-size: 1.3rem; }
-    }
-    @media (max-width: 768.98px) {
-   .contact-section {
-    display: block;
-   }
-   .left-contact {
-    display: block;
-   }
-   .nav-grid {
-    display: block;
-   }
-            }
-
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 80px;
+        right: 20px;
+        background-color: #25d366;
+        color: #ffffff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .whatsapp-float:hover {
+        background-color: #128c7e;
+      }
+      footer {
+        background-color: #fff;
+        text-align: center;
+        padding: 1rem;
+      }
+      footer p {
+        color: #333;
+      }
     </style>
-    <title>Document</title>
+    <title>SQL Konsultinq - Kitablarımız</title>
   </head>
   <body>
+    <!-- Top Header -->
     <header class="header container d-flex justify-content-between align-items-center h-100">
       <div class="brand">IT CONSULTING COMPANY</div>
       <div class="language-switcher d-flex">
@@ -402,81 +208,131 @@
         </div>
         <select aria-label="Language Selector">
           <option value="eng" selected>ENG</option>
-          <option value="es">AZ</option>
+          <option value="az">AZ</option>
         </select>
       </div>
     </header>
-   <!-- Navbar -->
-   <nav class="navbar navbarmain navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">SQL Konsultinq</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">Haqqımızda</a></li>
-          <li class="nav-item"><a class="nav-link" href="#mission">Missiyamız</a></li>
-          <li class="nav-item"><a class="nav-link" href="#training">Təlim</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Qaleriya</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Əlaqə</a></li>
-        </ul>
+
+    <!-- Dark Navbar -->
+    <nav class="navbar navbarmain navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">SQL Konsultinq</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">Haqqımızda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mission">Missiyamız</a></li>
+            <li class="nav-item"><a class="nav-link" href="#training">Təlim</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Qaleriya</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Əlaqə</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-
-    <!-- Navbar -->
+    <!-- Gray Navbar with Dropdowns -->
     <header class="navbar">
       <div class="container h-100">
         <div class="logo">
-          <a
-            href="/
-            "
-          >
+          <a href="/">
             <img src="/sql/icon/logo.png" alt="Logo" />
           </a>
         </div>
-        <nav class="nav-links">
-          <a href="/#detailsContainer">Ümumi məlumat</a>
-          <a href="/#detailsContainer2">Servislər</a>
-          <a href="/#carousellogos">Partnyorlar</a>
-          <a href="/#detailsContainer2">Xəbərlər</a>
-          <a href="/#detailsContainer2">Kitab</a>
+        <nav class="nav-links d-flex align-items-center">
+          <!-- ÜMUMİ MƏLUMAT DROPDOWN -->
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#detailsContainer" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Ümumi məlumat </a>
+            <ul class="dropdown-menu custom-dropdown-bg">
+              <li><a class="dropdown-item py-1" href="#detailsContainer">Haqqımızda</a></li>
+              <li><a class="dropdown-item py-1" href="#detailsContainer">Məqsədimiz</a></li>
+              <li><a class="dropdown-item py-1" href="#detailsContainer">Missiyamız</a></li>
+            </ul>
+          </div>
+
+          <!-- SERVİSLƏR DROPDOWN -->
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#detailsContainer2" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Servislər </a>
+            <ul class="dropdown-menu custom-dropdown-bg">
+              <li><a class="dropdown-item" href="#detailsContainer2">Konsultinq</a></li>
+              <li><a class="dropdown-item" href="#detailsContainer2">Təlim</a></li>
+              <li><a class="dropdown-item" href="#detailsContainer2">Digər Xidmətlər</a></li>
+            </ul>
+          </div>
+
+          <!-- Remaining links -->
+          <a href="#carousellogos">Partnyorlar</a>
+          <a href="#detailsContainer2">Xəbərlər</a>
+          <a href="#detailsContainer2">Kitab</a>
         </nav>
+
         <div class="search-bar">
           <input type="text" placeholder="Search" />
           <button type="button">
-            <img src="/sql/icon/zoom.png" class="searchicon" alt="Logo" />
+            <img src="/sql/icon/zoom.png" class="searchicon" alt="Search Icon" />
           </button>
         </div>
       </div>
     </header>
-    
-   
-      <!-- Book Details Section -->
-      <section class="details-section">
-        <div class="container">
-          <div class="row align-items-center gy-4">
-            <!-- Book Cover Image -->
-            <div class="col-lg-5">
-              <img src="/sql/foto/5.png" alt="Kitab Kapak" class="details-img">
-            </div>
-            <!-- Book Description -->
-            <div class="col-lg-7 details-content">
-              <h2>Ətraflı Məlumat</h2>
-              <p>
-                İlk Azərbaycan dilində SQL kitabı 2010-cu ildə 200 nüsxə tirajla nəşr olunub. Bu kitabın ilk nüsxəsi bir il ərzində böyük tələbatla qarşılandı. Lakin istifadəçilərin bəzi rəylərini nəzərə alaraq, 2013-cü ildə kitabın ikinci nəşri çap olunub. Bu dövrün ən aktual Oracle 12C versiyası üçün yazılmış bu kitab, istifadəçilərin tələblərinə uyğun olaraq mahiyyətcə yenidən hazırlanmışdır.
-              </p>
-              <p>
-                9 il sonra, 2021-ci ildə, Oracle 19C üçün yenilənmiş SQL imkanları ilə əlaqədar yeni bir 3-cü nəşr çap edilmişdir. Bu nəşr SQL ilə yeni imkanlar və təcrübələr gətirən ən son versiya ilə yenilənib. Ümumiyyətlə, indiyədək SQL ilə bağlı kitablar 1000-dən çox tirajla satılıb.
-              </p>
+
+    <!-- Book Details Section -->
+    <section class="details-section">
+      <div class="container">
+        <!-- First Book -->
+        <div class="row align-items-center gy-3">
+          <!-- Book Cover Image -->
+          <div class="col-lg-5">
+            <img src="/sql/foto/5.png" alt="Kitab Kapak" class="details-img" />
+          </div>
+          <!-- Book Description -->
+          <div class="col-lg-7 details-content">
+            <h2>Azərbaycan dilində ilk SQL kitabı</h2>
+            <p>
+              İlk Azərbaycan dilində SQL kitabı 2010-cu ildə 200 nüsxə tirajla nəşr olunub. Bu kitabın ilk nüsxəsi bir il ərzində böyük tələbatla qarşılandı. Lakin istifadəçilərin bəzi rəylərini
+              nəzərə alaraq, 2013-cü ildə kitabın ikinci nəşri çap olunub.
+            </p>
+            <p>
+              9 il sonra, 2021-ci ildə, Oracle 19C üçün yenilənmiş SQL imkanları ilə əlaqədar yeni bir 3-cü nəşr çap edilmişdir. Bu nəşr SQL ilə ən son funksiyaları birləşdirərək mövcud ehtiyacları
+              daha yaxşı qarşılayır. Ümumiyyətlə, indiyədək bu SQL kitabı 1000-dən çox tirajla geniş auditoriyaya çatdırılıb.
+            </p>
+            <!-- Download area: 2 items side by side -->
+            <div class="download-area">
               <a href="#" class="download-link">Kitabı Yüklə</a>
+              <a href="https://wa.me/+994559409565?text=Salam bu SQL kitabı sifariş etmək istəyərdim."> <button class="flash-green-btn">Sifariş et</button></a>
             </div>
           </div>
         </div>
-      </section>
-    <section class="contact-section py-4">
+
+        <!-- Second Book (PL/SQL) -->
+        <div class="row align-items-center gy-4 pt-4">
+          <!-- PL/SQL Book Text -->
+          <div class="col-lg-7 details-content">
+            <h2>PL/SQL Proqramlaşdırma</h2>
+            <p>
+              Bu kitab Oracle mühitində prosedur dilinin (PL/SQL) əsaslarına dərindən yiyələnmək istəyənlər üçün nəzərdə tutulmuşdur. PL/SQL dilində funksiyalar, prosedurlar, triggerlər, paketlər və
+              daha çoxunu effektiv şəkildə öyrənmək üçün nəzəri və praktik misallar təqdim olunur.
+            </p>
+            <p>
+              Həm yeni başlayanlar, həm də təcrübəli proqramçılar üçün hazırlanmış bu resurs sayəsində siz məlumat bazası əməliyyatlarını daha təhlükəsiz və sürətli şəkildə həyata keçirə biləcəksiniz.
+              Oracle 19C mühitinə uyğunlaşdırılmış kitab, PL/SQL ilə bağlı aktual yenilikləri və real-case nümunələri özündə cəmləşdirir.
+            </p>
+            <div class="download-area">
+              <a href="#" class="download-link">Kitabı Yüklə</a>
+              <a href="https://wa.me/+994559409565?text=Salam bu PL/SQL kitabı sifariş etmək istəyərdim."> <button class="flash-green-btn">Sifariş et</button></a>
+            </div>
+          </div>
+          <!-- PL/SQL Book Cover Image -->
+          <div class="col-lg-5">
+            <img src="/sql/foto/plsql.jpg" alt="PL/SQL Kitab Kapak" class="details-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- form section -->
+
+    <section class="contact-section">
       <div class="contact-container">
         <div class="left-contact">
           <div class="brand-area">
@@ -484,8 +340,8 @@
               <img src="/sql/icon/logo.png" alt="SQL Logo" />
             </a>
             <div class="brand-text">
-              <h1>IT Konsultinq</h1>
-              <h2>Şirkəti</h2>
+              <h1>IT CONSULTING</h1>
+              <h2>Company</h2>
             </div>
           </div>
 
@@ -496,9 +352,10 @@
 
           <div class="nav-grid">
             <a href="#">Haqqımızda</a>
-            <a href="#">Əlaqə</a>
+            <a href="#">Haqqımızda</a>
+            <a href="#">Bizimlə əlaqə</a>
             <a href="#">Missiyamız</a>
-            <a href="#">Hədəfimiz</a>
+            <!-- <a href="#">Hədəfimiz</a> -->
             <a href="#">Partnyorlar</a>
             <a href="#">Kitablarımız</a>
             <a href="#">Konsultinq servisi</a>
@@ -520,10 +377,9 @@
       <i class="fab fa-whatsapp whatsapp-icon"></i>
     </a>
     <!-- Footer -->
-    <footer class="bg-white text-white text-center py-2">
+    <footer class="bg-white text-white text-center pt-3">
       <p>© 2024 SQL.AZ Konsultinq şirkəti. Bütün hüquqlar qorunur.</p>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>

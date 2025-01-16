@@ -83,7 +83,7 @@
     }
     .card-person img {
       object-fit: cover;
-      height: 300px;
+      height: 400px;
       transition: transform 0.4s ease;
     }
     .card-person:hover img {
@@ -144,7 +144,7 @@
    <!-- Navbar -->
    <nav class="navbar navbarmain navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">SQL Konsultinq</a>
+      <a class="navbar-brand" href="/">SQL Konsultinq</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -162,31 +162,67 @@
 
 
     <!-- Navbar -->
-    <header class="navbar">
+     <header class="navbar">
       <div class="container h-100">
         <div class="logo">
-          <a
-            href="/
-            "
-          >
+          <a href="/">
             <img src="/sql/icon/logo.png" alt="Logo" />
           </a>
         </div>
-        <nav class="nav-links">
-          <a href="/#detailsContainer">Ümumi məlumat</a>
-          <a href="/#detailsContainer2">Servislər</a>
-          <a href="/#carousellogos">Partnyorlar</a>
-          <a href="/#detailsContainer2">Xəbərlər</a>
-          <a href="/#detailsContainer2">Kitab</a>
+        <nav class="nav-links d-flex align-items-center">
+          <!-- ÜMUMİ MƏLUMAT DROPDOWN -->
+          <div class="dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#detailsContainer"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Ümumi məlumat
+            </a>
+            <!-- Notice the "custom-dropdown-bg" class here -->
+            <ul class="dropdown-menu custom-dropdown-bg">
+              <li><a class="dropdown-item py-1" href="#detailsContainer">Haqqımızda</a></li>
+              <li><a class="dropdown-item py-1" href="#detailsContainer">Məqsədimiz</a></li>
+              <li><a class="dropdown-item py-1" href="#detailsContainer">Missiyamız</a></li>
+            </ul>
+          </div>
+    
+          <!-- SERVİSLƏR DROPDOWN -->
+          <div class="dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#detailsContainer2"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Servislər
+            </a>
+            <!-- Same custom class -->
+            <ul class="dropdown-menu custom-dropdown-bg">
+              <li><a class="dropdown-item" href="#detailsContainer2">Konsultinq</a></li>
+              <li><a class="dropdown-item" href="#detailsContainer2">Təlim</a></li>
+              <li><a class="dropdown-item" href="#detailsContainer2">Digər Xidmətlər</a></li>
+            </ul>
+          </div>
+    
+          <!-- Remaining links -->
+          <a href="#carousellogos">Partnyorlar</a>
+          <a href="#detailsContainer2">Xəbərlər</a>
+          <a href="#detailsContainer2">Kitab</a>
         </nav>
+    
         <div class="search-bar">
           <input type="text" placeholder="Search" />
           <button type="button">
-            <img src="/sql/icon/zoom.png" class="searchicon" alt="Logo" />
+            <img src="/sql/icon/zoom.png" class="searchicon" alt="Search Icon" />
           </button>
         </div>
       </div>
     </header>
+    
 
      <!-- Details/Layihələr Section -->
   <section class="details-section py-5" id="layiheler">

@@ -164,7 +164,7 @@ body {
 
 h2 {
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 footer {
@@ -832,7 +832,7 @@ footer {
   padding: 14.4px;
   color: #fff;
   border: #ff0090;
-  width: 185px;
+  width: 200px;
   border-radius: 20px;
   text-align: center;
   font-size: 12px;
@@ -1098,13 +1098,26 @@ p {
 .contact-form textarea {
   height: 120px;
   resize: none;
+}/* Custom dropdown background */
+.custom-dropdown-bg {
+  background-color: #7e7e7e !important;
 }
+
+/* Dropdown text color, hover states, etc. */
+.custom-dropdown-bg .dropdown-item {
+  color: #fff !important;  /* Make text white, for example */
+}
+
+.custom-dropdown-bg .dropdown-item:hover {
+  background-color: #656565 !important; /* Slightly darker hover color */
+}
+
 
 .whatsapp-float {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 80px;
+  bottom: 55px;
   right: 20px;
   background-color: #25d366;
   color: #ffffff;

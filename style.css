@@ -200,6 +200,10 @@ footer {
   object-fit: contain;
 }
 
+.fa-facebook-f:hover {
+  color: #007bff;
+}
+
 .header .social-icons a:hover img {
   opacity: 0.7;
 }
@@ -264,7 +268,7 @@ footer {
 }
 
 .navbar .search-bar button {
-  background-color: #d32f2f; 
+  background-color: #d32f2f;
   border: none;
   color: white;
   padding: 5px 15px;
@@ -307,7 +311,7 @@ footer {
   text-decoration: none;
 }
 .details-section {
-  background-color: #f8f9fa;  
+  background-color: #f8f9fa;
 }
 
 .details-section h2 {
@@ -461,10 +465,6 @@ footer {
   object-fit: cover;
 }
 
-.header .social-icons a:hover {
-  color: #007bff;
-}
-
 .about-btn {
   background-color: #ff007b;
   color: white;
@@ -559,8 +559,9 @@ footer {
   background-color: #237ab8;
   color: #fff;
   font-weight: bold;
-  font-size: 13px;
-  padding: 12px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  padding: 12px 22px;
   border-radius: 18px;
 }
 
@@ -569,9 +570,9 @@ footer {
   flex: 1;
 }
 .card4-content h3 {
-  font-size: 1rem;
+  font-size: 17px;
   color: #333;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 .card4-content p {
   font-size: 0.9rem;
@@ -612,10 +613,12 @@ footer {
   background-color: #024470;
 }
 .nav-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(5, auto);
-  column-gap: 40px;
-  row-gap: 10px;
+  column-gap: 31px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 19px;
 }
 
 .nav-grid a {
@@ -651,16 +654,21 @@ footer {
   display: inline-block;
   color: #fff;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 12px;
   border: 2px solid #fff;
-  border-radius: 18px;
-  padding: 6px 14px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  letter-spacing: 1px;
   margin-bottom: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .card5-header h3 {
-  margin: 8px 0 5px;
-  font-size: 1rem;
+  margin: 8px 0 8px;
+  font-size: 17.6px;
   color: #fff;
 }
 .card5-header p {
@@ -670,7 +678,7 @@ footer {
 }
 
 .card5-footer {
-  background-color: #ff0033;
+  background-color: #e40330;
   text-align: center;
   padding: 10px;
   margin-top: auto;
@@ -679,7 +687,6 @@ footer {
 .card5-footer a {
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
   font-size: 0.9rem;
 }
 
@@ -700,21 +707,21 @@ footer {
 }
 
 .secondcard5-footer {
-  background-color: #024470;
+  background-color: #043b60;
   text-align: center;
   padding: 10px;
   margin-top: auto;
 }
+
 .secondcard5-footer a {
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
   font-size: 0.9rem;
 }
+
 .secondcard5-footer a:hover {
   text-decoration: underline;
 }
- 
 
 .carousel-wrapper {
   background-color: #fff;
@@ -724,7 +731,7 @@ footer {
   padding: 20px 40px;
   margin: 40px auto;
 }
- 
+
 .logo-pill {
   background-color: #fff;
   border-radius: 50px;
@@ -748,27 +755,27 @@ footer {
   margin: 0 auto;
   align-items: start;
 }
- 
+
 .card-3d {
   background: #fff;
   border-radius: 12px;
   text-align: center;
   padding: 25px 0 15px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   perspective: 800px;
 }
- 
+
 .img-3d-wrapper {
   width: 100%;
   height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
-  perspective: inherit;  
+  perspective: inherit;
   margin-bottom: 15px;
 }
- 
+
 .img-3d {
   max-width: 100px;
   transition: transform 0.6s ease;
@@ -780,16 +787,16 @@ footer {
   font-size: 1rem;
   line-height: 1.4;
 }
- 
+
 .card-3d:hover {
   transform: translateY(-15px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   -webkit-transform: translateY(-15px);
   -moz-transform: translateY(-15px);
   -ms-transform: translateY(-15px);
   -o-transform: translateY(-15px);
 }
- 
+
 .card-3d:hover .img-3d {
   transform: rotateY(20deg) scale(1.05);
 }
@@ -829,6 +836,7 @@ footer {
   text-align: center;
   font-size: 12px;
   font-weight: bold;
+  letter-spacing: 1px;
   margin-bottom: 10px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -869,7 +877,7 @@ h3 {
   margin-bottom: 8px;
   font-size: 1.1rem;
   color: #333;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 p {
@@ -964,6 +972,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   width: 100%;
   min-width: 300px;
   color: #fff;
@@ -973,7 +982,7 @@ p {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  margin-right: 55px;
+  margin-right: 21px;
 }
 
 .brand-area img {
@@ -989,8 +998,9 @@ p {
 }
 
 .brand-text h1 {
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 14px;
+  /* font-weight: bold; */
+  letter-spacing: 2px;
   white-space: nowrap;
   margin-bottom: 5px;
   line-height: 1.1;
@@ -1004,7 +1014,7 @@ p {
 
 .contact-info {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -1013,6 +1023,7 @@ p {
   padding: 10px 15px;
   border-radius: 4px;
   display: flex;
+  height: 40px;
   width: 220px;
   align-items: center;
   font-size: 14px;
@@ -1023,7 +1034,7 @@ p {
 }
 .info-block:nth-child(2) span {
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 8px;
 }
 
 .nav-links {
@@ -1095,15 +1106,14 @@ p {
 .custom-dropdown-bg {
   background-color: #7e7e7e !important;
 }
- 
+
 .custom-dropdown-bg .dropdown-item {
-  color: #fff !important;   
+  color: #fff !important;
 }
 
 .custom-dropdown-bg .dropdown-item:hover {
-  background-color: #656565 !important;  
+  background-color: #656565 !important;
 }
-
 
 .whatsapp-float {
   position: fixed;
@@ -1178,8 +1188,8 @@ p {
 }
 
 .cards-grid {
-  display:none ;
-  opacity: 0 ;
+  display: none;
+  opacity: 0;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -1270,7 +1280,7 @@ p {
   background: linear-gradient(45deg, #755baf, #755baf);
 }
 .gobackbtn.consultinq.active {
-  display: block  ;
+  display: block;
 }
 .premium-heading.consultinq.active {
   display: block !important;
@@ -1335,7 +1345,6 @@ p {
   display: block;
   opacity: 1;
 }
-
 
 .scroll-to-top:hover {
   background-color: #555;
@@ -1525,8 +1534,6 @@ p {
   .contact-info {
     display: block;
   }
-
-
 }
 
 @media (max-width: 768px) {
@@ -1539,7 +1546,7 @@ p {
     margin: 10px 0;
   }
 }
- 
+
 .gallery-grid.active {
   display: grid;
   opacity: 1;
@@ -1565,13 +1572,10 @@ p {
   opacity: 0;
   margin: 5px auto;
 
- 
   grid-template-areas:
     "build build cert cert cert cert cert cert code code code code"
     "lap   lap   lap  lap  lap  lap  struct struct code code code code";
 }
-
- 
 
 .gallery-item {
   position: relative;
@@ -1636,9 +1640,17 @@ p {
   transition: opacity 0.3s ease;
 }
 
+.facebook-icon:hover {
+  color: #1877f2; /* Facebook blue, for example */
+}
+
 /* Show overlay on hover */
 .gallery-item:hover .overlay {
   opacity: 1;
+}
+
+.fa-instagram:hover {
+  color: #e1306c; /* Instagram pink, for example */
 }
 
 /* ========== CERTIFICATION OVERLAY (EXAMPLE) ========== */
@@ -1748,7 +1760,6 @@ p {
   color: #fff;
 }
 
- 
 .card-hover {
   position: absolute;
   left: 0;

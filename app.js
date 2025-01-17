@@ -158,8 +158,6 @@ newsback.addEventListener("click", () => {
   newsheadcontainer.style.display = "none";
   detailsContainer2.style.opacity = "1";
   newscontainer.classList.remove("active");
-
-
  
 });
 
@@ -198,5 +196,35 @@ document.getElementById("scrollToTop").addEventListener("click", function () {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
+  });
+});
+
+
+
+const button = document.getElementById('detailcontainerbtn1');
+const button2 = document.getElementById('detailcontainerbtn2');
+const button3 = document.getElementById('detailcontainerbtn3');
+
+button.addEventListener('click', () => {
+  window.scrollTo({
+    top: 600,
+    left: 0,
+    behavior: 'smooth'  
+  });
+});
+
+button2.addEventListener('click', () => {
+  window.scrollTo({
+    top: 1400,
+    left: 0,
+    behavior: 'smooth'  
+  });
+});
+
+button3.addEventListener('click', () => {
+  window.scrollTo({
+    top: 1400,
+    left: 0,
+    behavior: 'smooth'  
   });
 });

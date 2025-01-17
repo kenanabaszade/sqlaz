@@ -60,9 +60,6 @@
       <div class="brand">IT Consulting Company</div>
       <div class="language-switcher d-flex">
         <div class="social-icons me-5 pe-4">
-          <a href="#" aria-label="Email">
-            <img src="/sql/icon/mail.png" alt="Email" />
-          </a>
           <a href="#" aria-label="Facebook">
             <img src="/sql/icon/facebook.png" alt="Facebook" />
           </a>
@@ -85,32 +82,17 @@
           </a>
         </div>
         <nav class="nav-links d-flex align-items-center">
-          <!-- ÜMUMİ MƏLUMAT DROPDOWN -->
           <div class="dropdown">
-            <a class="nav-link dropdown-toggle" href="#detailsContainer" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Ümumi məlumat </a>
-            <!-- Notice the "custom-dropdown-bg" class here -->
-            <ul class="dropdown-menu custom-dropdown-bg">
-              <li><a class="dropdown-item py-1" href="#detailsContainer">Haqqımızda</a></li>
-              <li><a class="dropdown-item py-1" href="#detailsContainer">Məqsədimiz</a></li>
-              <li><a class="dropdown-item py-1" href="#detailsContainer">Missiyamız</a></li>
-            </ul>
+            <a class="nav-link" id="detailcontainerbtn1" href="#detailsContainer"> Ümumi məlumat </a>
           </div>
-
-          <!-- SERVİSLƏR DROPDOWN -->
           <div class="dropdown">
-            <a class="nav-link dropdown-toggle" href="#detailsContainer2" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Servislər </a>
-            <!-- Same custom class -->
-            <ul class="dropdown-menu custom-dropdown-bg">
-              <li><a class="dropdown-item" href="#detailsContainer2">Konsultinq</a></li>
-              <li><a class="dropdown-item" href="#detailsContainer2">Təlim</a></li>
-              <li><a class="dropdown-item" href="#detailsContainer2">Digər Xidmətlər</a></li>
-            </ul>
+            <a class="nav-link" id="detailcontainerbtn2" href="#detailsContainer2"> Servislər </a>
           </div>
 
           <!-- Remaining links -->
           <a href="#carousellogos">Partnyorlar</a>
           <a href="#detailsContainer2">Xəbərlər</a>
-          <a href="#detailsContainer2">Kitab</a>
+          <a href="#detailsContainer2" id="detailcontainerbtn3">Kitab</a>
         </nav>
 
         <div class="search-bar">
@@ -131,7 +113,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#about">Haqqımızda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Ümumi məlumat</a></li>
             <li class="nav-item"><a class="nav-link" href="#mission">Missiyamız</a></li>
             <li class="nav-item"><a class="nav-link" href="#training">Təlim</a></li>
             <li class="nav-item"><a class="nav-link" href="#gallery">Qaleriya</a></li>
@@ -144,9 +126,9 @@
     <div class="gridcontainer container py-3" id="detailsContainer">
       <div class="card card1 horizontal-card">
         <div class="image-area" style="background-image: url('/sql/foto/1.png')"></div>
-        <div class="text-area">
+        <div class="text-area" >
           <div class="px-3 pt-3" id="showPremiumBtn" style="cursor: pointer">
-            <button class="bubble-header text-uppercase about">Haqqımızda</button>
+            <button class="bubble-header text-uppercase about">Ümumi məlumat</button>
             <h3>İT sahəsində 20 illik təcrübə.</h3>
             <p>İT sektorundakı 20 illik təcrübəmiz ərzində biz müxtəlif sənaye sahələrində mühüm layihələrdə iştirak edərək sektordakı inkişaflara liderlik etmişik.</p>
           </div>
@@ -269,7 +251,7 @@
 
     <div class="container ourmissionpremium" id="ourmissioncontainer">
       <button class="gobackbtn news" id="ourmissionback"><span class="arrow">&#8592;</span> Geri</button>
-      <div class="premium-subtitle d-flex align-items-center justify-content-between">
+      <div class="premium-subtitle d-flex align-items-center justify-content-between" id="#detailsContainer">
         <h2 class="premium-heading news">Missiyamız</h2>
         <p style="border-bottom: 1px solid">ŞİRKƏT HAQQINDA ƏTRAFLI MƏLUMAT</p>
       </div>
@@ -295,16 +277,15 @@
           <h2 class="mb-3">Bizim Dəyərlərimiz</h2>
           <p>Bu missiya ilə biz SQL.az müştərilərimizə ən son texnologiyalar və ən yaxşı təcrübələri təqdim etməklə bizneslərini böyütmək və rəqabət üstünlüyü əldə etmək üçün dəstək veririk.</p>
           <p>Bütün dünyada texnologiya sahəsində istinad nöqtəsi olmaq və müştərilərimizin uğurunu dəstəkləmək.</p>
-          <a href="/ourmissionpage/ourmissionpage.html" class="btn btn-outline-primary mt-2">Details</a>
+          <a href="/ourmissionpage/ourmissionpage.html" class="btn btn-outline-primary mt-2">Detallı</a>
         </div>
       </div>
-    </div>
-
+    </div> 
     <!-- PREMIUM ABOUT US -->
     <div class="premium-aboutus-container" id="premiumAboutUs">
       <button class="gobackbtn" id="aboutusback"><span class="arrow">&#8592;</span> Geri</button>
-      <div class="premium-subtitle d-flex align-items-center justify-content-between">
-        <h2 class="premium-heading">Haqqımızda</h2>
+      <div class="premium-subtitle d-flex align-items-center justify-content-between" id="detailsContainer">
+        <h2 class="premium-heading">Ümumi məlumat</h2>
         <p style="border-bottom: 1px solid">ŞİRKƏT HAQQINDA ƏTRAFLI MƏLUMAT</p>
       </div>
 
@@ -376,14 +357,14 @@
           </div>
         </a>
         <!-- CARD 2 -->
-        <a href="/ourgoalpages/telimproqramlari.html">
+        <a href="/ourgoalpages/telimproqramlari1.html">
           <div class="premium-card yellow">
             <div class="premium-icon"><img src="/sql/icon/ourgoalicons/2.png" /></div>
             <h3 class="premium-title">Konsultinq xidmətləri</h3>
           </div>
         </a>
         <!-- CARD 3 -->
-        <a href="/ourgoalpages/telimproqramlari.html">
+        <a href="/ourgoalpages/telimproqramlari2.html">
           <div class="premium-card yellow">
             <div class="premium-icon"><img src="/sql/icon/ourgoalicons/3.png" /></div>
             <h3 class="premium-title">Təlim proqramları</h3>
@@ -566,7 +547,7 @@
             imkanı əldə edə bilərsiniz.
           </p>
           <p>Bütün dünyada texnologiya sahəsində istinad nöqtəsi olmaq və müştərilərimizin uğurunu dəstəkləmək.</p>
-          <a href="/ourmissionpage/ourmissionpage.html" class="btn btn-outline-primary mt-2">Details</a>
+          <a href="/ourmissionpage/ourmissionpage.html" class="btn btn-outline-primary mt-2">Detallı</a>
         </div>
       </div>
     </div>
@@ -646,7 +627,7 @@
       <!-- Card 3 -->
       <div class="news-card">
         <div class="card-image">
-          <img src="/news/standard-quality-control-concept-m.jpg" alt="Fall Orientation Week" />
+          <img src="/news/standard-quality-control-concept-m-min.jpg" alt="Fall Orientation Week" />
         </div>
 
         <div class="card-content">
@@ -692,32 +673,6 @@
       </div>
     </section>
 
-    <!-- Carousel 2-->
-
-    <div class="container py-2" id="carousellogos">
-      <div class="carousel-wrapper mx-auto">
-        <div id="logoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-          <div class="carousel-inner d-flex">
-            <div class="carousel-item active">
-              <div class="d-flex justify-content-between">
-                <div class="logo-pill">
-                  <img src="/texnikipartnyorlar/java.png" alt="Java" />
-                </div>
-                <div class="logo-pill">
-                  <img src="/texnikipartnyorlar/ocm.png" alt="Ocm" />
-                </div>
-                <div class="logo-pill">
-                  <img src="/texnikipartnyorlar/pl.png" alt="PL" />
-                </div>
-                <div class="logo-pill">
-                  <img src="/texnikipartnyorlar/tech.png" alt="Tech" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- form section -->
 
     <section class="contact-section">
@@ -739,11 +694,10 @@
           </div>
 
           <div class="nav-grid">
-            <a href="#">Haqqımızda</a>
-            <a href="#">Haqqımızda</a>
+            <a href="#">Ümumi məlumat</a>
             <a href="#">Bizimlə əlaqə</a>
             <a href="#">Missiyamız</a>
-            <!-- <a href="#">Hədəfimiz</a> -->
+            <a href="#">Hədəfimiz</a>
             <a href="#">Partnyorlar</a>
             <a href="#">Kitablarımız</a>
             <a href="#">Konsultinq servisi</a>

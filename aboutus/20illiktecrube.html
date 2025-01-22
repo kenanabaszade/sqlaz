@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="/style.css" />
     <style>
       /* ----- Premium Button ----- */
+              .hover-btn {
+                background: #304bb9;
+                color: white;
+                border: 1px solid;
+                padding: 8px 16px;
+                font-weight: 500;
+                border-radius: 7px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                }
+
+        .hover-btn:hover {
+          background: #e1e1e1;
+        }
       .premium-btn {
         background-color: #ffd700;
         border: none;
@@ -54,7 +69,7 @@
       #haqqimizda h2 {
         font-size: 2.5rem;
         font-weight: 700;
-        color: #2a5298;
+        color: #1e3c72;
       }
       #haqqimizda li {
         font-size: 1.1rem;
@@ -105,6 +120,11 @@
         font-size: 0.95rem;
         list-style-type: disc;
       }
+
+      .text-fail {
+        color: #1e3c72;
+      }
+
       @media (max-width: 768.98px) {
         .contact-section {
           display: block;
@@ -121,7 +141,7 @@
   </head>
   <body>
     <header class="header container d-flex justify-content-between align-items-center h-100">
-      <div class="brand">IT CONSULTING COMPANY</div>
+      <div class="brand">IT CONSULTING</div>
       <div class="language-switcher d-flex">
         <div class="social-icons me-5 pe-4">
           
@@ -190,65 +210,38 @@
     </header>
 
     <!-- Details/Layihələr Section -->
-    <section class="details-section py-5" id="layiheler">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <!-- Image Column -->
-          <div class="col-md-6">
-            <img src="/sql/foto/aboutphotos/cheerful-business-people-meeting-raising-arms.jpg" alt="Məlumatlı Görüntü" class="img-fluid rounded shadow" />
-          </div>
-          <!-- Text Column -->
-          <div class="col-md-6">
-            <p class="lead">Biz son texnologiyaları və innovativ həlləri təqdim edərək, müştərilərimizin bizneslərini növbəti səviyyəyə qaldırırıq.</p>
-            <p>Təcrübəli komandamız, qabaqcıl texnologiya və müasir yanaşmalarla işinizi daha rəqabətli edir. Hər detalda mükəmməlliyə can atırıq və fərdi həllər yaradırıq.</p>
-            <ul class="list-group list-group-flush my-4">
-              <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Ən son texnologiyalar və innovasiyalar</li>
-              <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Təcrübəli və peşəkar komanda</li>
-              <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Keyfiyyətli və etibarlı xidmətlər</li>
-            </ul>
-            <a href="#haqqimizda" style="color: black"><button class="btn premium-btn">Ətraflı Öyrənin</button></a>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- About Us Section -->
     <section id="haqqimizda" class="py-5">
       <div class="container">
-        <h2 class="text-center mb-5">Haqqımızda</h2>
-        <div class="row justify-content-center">
+        <h2 class="text-start mb-5">Haqqımızda</h2>
+        <div class="row justify-content-start">
           <div class="col-lg-10">
-            <ul class="list-group list-group-flush fs-5 mb-4">
-              <li class="list-group-item border-0 ps-0">▪️ İT üzrə 20 illik təcrübə</li>
-              <li class="list-group-item border-0 ps-0">▪️ Texnika üzrə PhD elmi dərəcə</li>
-              <li class="list-group-item border-0 ps-0">▪️ Oracle üzrə Beynəlxalq sertifikatlar</li>
-              <li class="list-group-item border-0 ps-0">▪️ Oracle Certified Master-ın ən yüksək dərəcəsi</li>
-              <li class="list-group-item border-0 ps-0">▪️ Xarici və yerli biznes tərəfdaşlarımız</li>
-              <li class="list-group-item border-0 ps-0">▪️ Uğurlu layihələr</li>
-            </ul>
+          
             <div class="text-left">
               <p class="mb-2">
-                <strong>İT sahəsində 20 illik təcrübə: </strong>
+                <strong> <i class="bi bi-check-circle-fill text-fail me-2"></i> İT sahəsində 20 illik təcrübə: </strong>
                 Biz, İT sektorunda 20 illik təcrübəmizlə, müxtəlif sənaye sahələrində lider layihələrə imza atmışıq.
               </p>
               <p class="mb-2">
-                <strong>Texnika üzrə PhD elmi dərəcə: </strong>
+                <strong><i class="bi bi-check-circle-fill  text-fail me-2"></i> Texnika üzrə PhD elmi dərəcə: </strong>
                 Dərin tədqiqat və texniki biliklərimiz PhD dərəcəsi ilə təsdiqlənmişdir.
               </p>
               <p class="mb-2">
-                <strong>Oracle üzrə Beynəlxalq sertifikatlar: </strong>
+                <strong><i class="bi bi-check-circle-fill  text-fail me-2"></i> Oracle üzrə Beynəlxalq sertifikatlar: </strong>
                 Tanınmış Oracle sertifikatlarımız, platforma üzrə geniş təcrübəmizi göstərir.
               </p>
               <p class="mb-2">
-                <strong>Oracle Certified Master-ın ən yüksək dərəcəsi: </strong>
+                <strong><i class="bi bi-check-circle-fill text-fail me-2"></i> Oracle Certified Master-ın ən yüksək dərəcəsi: </strong>
                 Bu unikal sertifikat, mürəkkəb problemlərin həllində mükəmməlliyimizi nümayiş etdirir.
               </p>
               <p class="mb-2">
-                <strong>Xarici və yerli biznes tərəfdaşlarımız: </strong>
+                <strong><i class="bi bi-check-circle-fill text-fail  me-2"></i> Xarici və yerli biznes tərəfdaşlarımız: </strong>
                 Geniş biznes şəbəkəmiz bizə milli və beynəlxalq səviyyədə iş imkanları yaradır.
               </p>
               <p>
-                <strong>Uğurlu layihələr: </strong>
+                <strong><i class="bi bi-check-circle-fill text-fail  me-2"></i> Uğurlu layihələr: </strong>
                 Keçmiş uğurlu layihələrimiz sayəsində, müştəri məmnuniyyəti və keyfiyyətli xidmətlərimizi təsdiqləmişik.
               </p>
             </div>
@@ -260,7 +253,7 @@
     <!-- Team/Komanda Section -->
     <section id="komanda" class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-5" style="text-transform: none">Müəllimlərimiz</h2>
+        <h2 class="text-start mb-5" style="text-transform: none">Müəllimlərimiz</h2>
         <div class="row g-4">
           <div class="col-md-6 col-lg-6">
             <div class="card card-person h-100">
@@ -335,7 +328,7 @@
       </div>
     </section>
 
-    <section class="contact-section py-4">
+       <section class="contact-section">
       <div class="contact-container">
         <div class="left-contact">
           <div class="brand-area">
@@ -343,28 +336,22 @@
               <img src="/sql/icon/logo.png" alt="SQL Logo" />
             </a>
             <div class="brand-text">
-              <h1>IT Konsultinq</h1>
-              <h2>Şirkəti</h2>
+              <h1>IT CONSULTING</h1>
             </div>
           </div>
 
           <div class="contact-info">
             <div class="info-block"><span>Phone:</span><a href="tel:+994559409565">+994 55 940 95 65</a></div>
-            <div class="info-block"><span>Email:</span> info@sql.az</div>
+            <div class="info-block" style="width: 170px; margin-right: 27px"><span>Email:</span> info@sql.az</div>
           </div>
 
           <div class="nav-grid">
-            <a href="#">Haqqımızda</a>
-            <a href="#">Əlaqə</a>
-            <a href="#">Missiyamız</a>
-            <a href="#">Hədəfimiz</a>
-            <a href="#">Partnyorlar</a>
-            <a href="#">Kitablarımız</a>
-            <a href="#">Konsultinq servisi</a>
-            <a href="#">Təlimlərimiz</a>
-            <a href="#">Qaleriya</a>
-            <a href="#">Xəbərlər</a>
-          </div>
+  <a href="/#detailsContainer" id="detailcontainerbtn1">Ümumi məlumat</a>
+  <a href="/#detailsContainer2" id="detailcontainerbtn2">Xidmətlərimiz</a>
+  <a href="/#carousellogos">Partnyorlar</a>
+  <a href="/#detailsContainer2">Xəbərlər</a>
+  <a href="/#detailsContainer2" id="detailcontainerbtn3">Kitablar</a>
+</div>
         </div>
       </div>
     </section>

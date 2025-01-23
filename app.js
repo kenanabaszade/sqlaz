@@ -77,7 +77,6 @@ ourgoalbackbtn.addEventListener("click", () => {
   premiumContainerOurGoal.classList.remove("fade-in");
 });
 
-
 const showGalleryBtn = document.getElementById("showgallery");
 const gallerycontainer = document.getElementById("gallerycontainer");
 const gallerytitle = document.getElementById("gallerytitle");
@@ -158,7 +157,6 @@ newsback.addEventListener("click", () => {
   newsheadcontainer.style.display = "none";
   detailsContainer2.style.opacity = "1";
   newscontainer.classList.remove("active");
- 
 });
 
 consultinqback.addEventListener("click", () => {
@@ -199,32 +197,56 @@ document.getElementById("scrollToTop").addEventListener("click", function () {
   });
 });
 
+const button = document.getElementById("detailcontainerbtn1");
+const button2 = document.getElementById("detailcontainerbtn2");
+const button3 = document.getElementById("detailcontainerbtn3");
 
-
-const button = document.getElementById('detailcontainerbtn1');
-const button2 = document.getElementById('detailcontainerbtn2');
-const button3 = document.getElementById('detailcontainerbtn3');
-
-button.addEventListener('click', () => {
+button.addEventListener("click", () => {
   window.scrollTo({
     top: 600,
     left: 0,
-    behavior: 'smooth'  
+    behavior: "smooth",
   });
 });
 
-button2.addEventListener('click', () => {
+button2.addEventListener("click", () => {
   window.scrollTo({
     top: 1400,
     left: 0,
-    behavior: 'smooth'  
+    behavior: "smooth",
   });
 });
 
-button3.addEventListener('click', () => {
+button3.addEventListener("click", () => {
   window.scrollTo({
     top: 1400,
     left: 0,
-    behavior: 'smooth'  
+    behavior: "smooth",
+  });
+});
+
+$(document).ready(function () { 
+  $(".gallery-item").on("click", function () {
+    var imagesData = $(this).attr("data-images");
+    if (!imagesData) return;
+
+    var images = JSON.parse(imagesData);
+
+    var thumbnailsHtml = "";
+    images.forEach(function (imgUrl, index) {
+      thumbnailsHtml += `
+        <a href="${imgUrl}" 
+           data-fancybox="activeGallery" 
+           data-caption="Image ${index + 1}">
+          <img src="${imgUrl}" class="img-thumbnail" 
+               style="width: 120px; height: auto; margin: 5px;" />
+        </a>
+      `;
+    });
+
+    $("#modalGalleryBody").html(thumbnailsHtml);
+
+    var galleryModal = new bootstrap.Modal(document.getElementById("galleryModal"));
+    galleryModal.show();
   });
 });

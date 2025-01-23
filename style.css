@@ -1853,3 +1853,18 @@ p {
   display: block;
   opacity: 1;
 }
+.modal-dialog {
+  width: 80% !important;      /* or max-width: 80% if preferred */
+  max-width: 80% !important; /* ensures it doesn’t exceed 80% of viewport width */
+  height: 90% !important;     /* or max-height: 90% */
+  max-height: 90% !important;
+  margin: auto;               /* keeps it centered horizontally */
+}
+
+.modal-content {
+  height: 100%;
+}
+
+.modal-body {
+  overflow-y: auto; /* allows scrolling if content exceeds modal height */
+}

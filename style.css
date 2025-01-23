@@ -1854,11 +1854,11 @@ p {
   opacity: 1;
 }
 .modal-dialog {
-  width: 80% !important;      /* or max-width: 80% if preferred */
-  max-width: 80% !important; /* ensures it doesn’t exceed 80% of viewport width */
-  height: 90% !important;     /* or max-height: 90% */
+  width: 80% !important;       
+  max-width: 80% !important;  
+  height: 90% !important;      
   max-height: 90% !important;
-  margin: auto;               /* keeps it centered horizontally */
+  margin: 55px auto;                
 }
 
 .modal-content {
@@ -1866,5 +1866,10 @@ p {
 }
 
 .modal-body {
-  overflow-y: auto; /* allows scrolling if content exceeds modal height */
+  overflow-y: auto;  
 }
+.fancybox__container {
+  z-index: 99999;
+}
+
+ 

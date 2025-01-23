@@ -185,13 +185,13 @@
       <h2 class="premium-heading" style="border-bottom: 4px solid #eb003f; width: 150px">Qaleriya</h2>
     </div>
 
-    <section class="gallery-grid" id="gallerycontainer"> 
+    <section class="gallery-grid" id="gallerycontainer">
       <div class="gallery-item item-building" data-images='["/gallery/1.jpg","/gallery/2.jpg","/gallery/3.jpg"]'>
         <a href="javascript:;">
           <div class="top-right-icon"></div>
           <div class="overlay center-overlay"></div>
         </a>
-      </div> 
+      </div>
       <!-- Example: Certification -->
       <div class="gallery-item item-certification" data-images='["/gallery/4.jpg","/gallery/5.jpg"]'>
         <a href="javascript:;">
@@ -202,23 +202,45 @@
           </div>
         </a>
       </div>
+
+      <!-- Coder (spans 2 rows on the right) -->
+      <div class="gallery-item item-coder" data-images='["/gallery/4.jpg","/gallery/5.jpg"]'>
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay"></div>
+        </a>
+      </div>
+
+      <!-- Laptop (large, row2) -->
+      <div class="gallery-item item-laptop" data-images='["/gallery/4.jpg","/gallery/5.jpg"]'>
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay"></div>
+        </a>
+      </div>
+
+      <!-- Structure (small, row2) -->
+      <div class="gallery-item item-structure" data-images='["/gallery/4.jpg","/gallery/5.jpg"]'>
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay"></div>
+        </a>
+      </div>
     </section>
 
-    <!-- Modal -->
-    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h5 class="modal-title">Gallery</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div> 
-          <div class="modal-body" id="modalGalleryBody"> 
+    <!-- Modal --> 
+      <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"> 
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold">Gallery</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalGalleryBody"></div>
           </div>
         </div>
       </div>
-    </div>
-
+  
     <!-- Hidden images -->
     <a class="fancybox-trigger" data-fancybox="gallery" style="display: none" data-src="/sql/foto/1.png"></a>
     <a class="fancybox-trigger" data-fancybox="gallery" style="display: none" data-src="/sql/foto/2.png"></a>

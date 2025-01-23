@@ -225,7 +225,7 @@ button3.addEventListener("click", () => {
   });
 });
 
-$(document).ready(function () { 
+$(document).ready(function () {
   $(".gallery-item").on("click", function () {
     var imagesData = $(this).attr("data-images");
     if (!imagesData) return;
@@ -239,7 +239,10 @@ $(document).ready(function () {
            data-fancybox="activeGallery" 
            data-caption="Image ${index + 1}">
           <img src="${imgUrl}" class="img-thumbnail" 
-               style="width: 120px; height: auto; margin: 5px;" />
+               style="width: 200px;
+                      height: 130px;
+                      margin: 5px;
+                      object-fit: cover;" />
         </a>
       `;
     });

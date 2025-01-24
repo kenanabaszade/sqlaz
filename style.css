@@ -115,19 +115,19 @@ video {
 }
 /* Applies to Chrome, Safari, Edge, Opera */
 ::-webkit-scrollbar {
-  width: 8px;               /* makes the scrollbar thin */
-  height: 8px;              /* horizontal scrollbar if needed */
+  width: 8px; /* makes the scrollbar thin */
+  height: 8px; /* horizontal scrollbar if needed */
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;   /* no track background or set a color */
+  background: transparent; /* no track background or set a color */
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.4); /* darkish thumb */
   border-radius: 8px;
-  border: 2px solid transparent;        /* optional space around thumb */
-  background-clip: content-box;         /* ensures border is transparent */
+  border: 2px solid transparent; /* optional space around thumb */
+  background-clip: content-box; /* ensures border is transparent */
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -465,7 +465,7 @@ footer {
 }
 
 .parallax {
-  background-image: url("/gallery/hdlogo.jpg");
+  background-image: url("/gallery/hdlogo.webp");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1248,13 +1248,6 @@ p {
   -o-transition: opacity 0.6s ease;
 }
 
-.gallery-grid {
-  /* Each item’s min width = 200px (adjust as you wish) */
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-}
-
 .gallery-item img {
   width: 100%;
   height: auto;
@@ -1602,7 +1595,7 @@ p {
 
   grid-template-areas:
     "build build cert cert cert cert cert cert code code code code"
-    "lap   lap   lap  lap  lap  lap  struct struct code code code code";
+    "lap   lap   lap  lap  lap  lap  struct struct album album album album";
 }
 
 .gallery-item {
@@ -1618,27 +1611,31 @@ p {
 
 .item-building {
   grid-area: build;
-  background-image: url("/gallery/5.jpg");
+  background-image: url("/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/cover.jpg");
 }
 
 .item-certification {
   grid-area: cert;
-  background-image: url("/gallery/2.jpg");
+  background-image: url("/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/cover.jpg");
 }
 
 .item-coder {
   grid-area: code;
-  background-image: url("/gallery/4.jpg");
+  background-image: url("/gallery/newphotos/OCA1Z0-071Sertifikattəltifetmətədbiri/cover.jpg");
 }
 
 .item-laptop {
   grid-area: lap;
-  background-image: url("/gallery/3.jpg");
+  background-image: url("/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/cover.JPG");
+}
+.item-album {
+  grid-area: album;
+  background-image: url("/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/cover.jpg");
 }
 
 .item-structure {
   grid-area: struct;
-  background-image: url("/gallery/1.jpg");
+  background-image: url("/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/cover.jpg");
 }
 
 /* ========== TOP-RIGHT ICON ========== */
@@ -1659,7 +1656,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #3f5a7c69;
+  background: #2f588dad;
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -1692,6 +1689,8 @@ p {
 .center-overlay p {
   color: #fff;
   margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .card-hover p,
@@ -1854,11 +1853,11 @@ p {
   opacity: 1;
 }
 .modal-dialog {
-  width: 80% !important;       
-  max-width: 80% !important;  
-  height: 90% !important;      
+  width: 80% !important;
+  max-width: 80% !important;
+  height: 90% !important;
   max-height: 90% !important;
-  margin: 55px auto;                
+  margin: 55px auto;
 }
 
 .modal-content {
@@ -1866,10 +1865,8 @@ p {
 }
 
 .modal-body {
-  overflow-y: auto;  
+  overflow-y: auto;
 }
 .fancybox__container {
   z-index: 99999;
 }
-
- 

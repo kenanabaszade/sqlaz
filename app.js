@@ -98,7 +98,6 @@ showGalleryBtn.addEventListener("click", () => {
 
 gallerybtn.addEventListener("click", () => {
   detailsContainer.classList.remove("fade-out");
-
   detailsContainer.style.display = "grid";
   detailsContainer.style.opacity = "1";
   gallerybtn.classList.remove("d-block");
@@ -120,8 +119,28 @@ const detailsContainer2 = document.getElementById("detailsContainer2");
 const ourtrainingcontainer = document.getElementById("ourtrainingcontainer");
 const consultingheadercontainer = document.getElementById("consultingheadercontainer");
 const trainingbackbtn = document.getElementById("trainingbackbtn");
+const tedbirdensekillerlink = document.getElementsByClassName("tedbirdensekillerlink");
 
-const trainingbtn = document.getElementById("trainingbtn");
+if (window.location.hash == "#gallerycontainer") {
+  detailsContainer.classList.add("fade-out");
+
+  detailsContainer.addEventListener("transitionend", onDetailsFadeOut, { once: true });
+
+  function onDetailsFadeOut() {
+    detailsContainer.style.display = "none";
+    gallerybtn.classList.add("d-block");
+    gallerybtn.classList.remove("d-none");
+    gallerycontainer.classList.add("active");
+    gallerytitle.classList.add("active");
+    gallerycontainer.classList.add("fade-in d-block");
+  }
+
+  window.scrollTo({
+    top: 500,
+    left: 0,
+    behavior: "smooth",
+  });
+}
 
 newsbtn.addEventListener("click", () => {
   detailsContainer2.classList.add("fade-out");
@@ -143,13 +162,13 @@ consultinqbtn.addEventListener("click", () => {
   consultinqback.classList.add("active");
 });
 
-trainingbtn.addEventListener("click", () => {
-  detailsContainer2.classList.add("fade-out");
-  detailsContainer2.style.display = "none";
-  ourtrainingcontainer.classList.add("active");
-  consultinqback.classList.remove("active");
-  consultinqback.classList.add("active");
-});
+// trainingbtn.addEventListener("click", () => {
+//   detailsContainer2.classList.add("fade-out");
+//   detailsContainer2.style.display = "none";
+//   ourtrainingcontainer.classList.add("active");
+//   consultinqback.classList.remove("active");
+//   consultinqback.classList.add("active");
+// });
 
 newsback.addEventListener("click", () => {
   detailsContainer2.classList.remove("fade-out");

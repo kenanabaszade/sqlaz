@@ -219,6 +219,7 @@ document.getElementById("scrollToTop").addEventListener("click", function () {
 const button = document.getElementById("detailcontainerbtn1");
 const button2 = document.getElementById("detailcontainerbtn2");
 const button3 = document.getElementById("detailcontainerbtn3");
+const button4 = document.getElementById("detailcontainerbtn4");
 
 button.addEventListener("click", () => {
   window.scrollTo({
@@ -237,6 +238,13 @@ button2.addEventListener("click", () => {
 });
 
 button3.addEventListener("click", () => {
+  window.scrollTo({
+    top: 1400,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+button4.addEventListener("click", () => {
   window.scrollTo({
     top: 1400,
     left: 0,

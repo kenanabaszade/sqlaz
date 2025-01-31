@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      /* ----- Premium Button ----- */
+              .hover-btn {
+                background: #304bb9;
+                color: white;
+                border: 1px solid;
+                padding: 8px 16px;
+                font-weight: 500;
+                border-radius: 7px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                }
+
+        .hover-btn:hover {
+          background: #e1e1e1;
+        }
+      .premium-btn {
+        background-color: #ffd700;
+        border: none;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .premium-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      /* ----- Details Section ----- */
+      .details-section {
+        background-color: #fff;
+      }
+      .details-section h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #1e3c72;
+      }
+      .details-section p {
+        font-size: 1.1rem;
+        line-height: 1.75;
+      }
+      .details-section .list-group-item {
+        border: none;
+        padding-left: 0;
+        font-size: 1rem;
+      }
+      .details-section img {
+        transition: transform 0.5s ease;
+      }
+      .details-section img:hover {
+        transform: scale(1.02);
+      }
+
+      /* ----- About Us Section ----- */
+      #haqqimizda {
+        background-color: #f9fafb;
+      }
+      #haqqimizda h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1e3c72;
+      }
+      #haqqimizda li {
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+      }
+
+      /* ----- Team Section ----- */
+      #komanda {
+        background-color: #fff;
+      }
+      #komanda h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1e3c72;
+      }
+      .card-person {
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        background-color: #fefefe;
+      }
+      .card-person:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+      }
+      .card-person img {
+        object-fit: cover;
+        height: 400px;
+        transition: transform 0.4s ease;
+      }
+      .card-person:hover img {
+        transform: scale(1.05);
+      }
+      .card-person .card-body {
+        padding: 1.5rem;
+      }
+      .card-person .card-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #1e3c72;
+      }
+      .card-person ul {
+        padding-left: 1.2rem;
+        margin-bottom: 0;
+      }
+      .card-person ul li {
+        font-size: 0.95rem;
+        list-style-type: disc;
+      }
+
+      .text-fail {
+        color: #1e3c72;
+      }
+
+      @media (max-width: 768.98px) {
+        .contact-section {
+          display: block;
+        }
+        .left-contact {
+          display: block;
+        }
+        .nav-grid {
+          display: block;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header container d-flex justify-content-between align-items-center h-100">
+      <div class="brand">IT CONSULTING</div>
+      <div class="language-switcher d-flex">
+        <div class="social-icons me-5 pe-4">
+          
+          <a href="https://www.facebook.com/azesql" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/sql.az" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        
+      </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbarmain navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">SQL Konsultinq</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">Haqqımızda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mission">Missiyamız</a></li>
+            <li class="nav-item"><a class="nav-link" href="#training">Təlim</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Qaleriya</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Əlaqə</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container h-100">
+        <div class="logo">
+          <a href="/">
+            <img src="/sql/icon/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <nav class="nav-links d-flex align-items-center">
+          <!-- ÜMUMİ MƏLUMAT DROPDOWN -->
+          <div class="dropdown">
+            <a class="nav-link" href="/#detailsContainer"> ÜMUMİ MƏLUMAT </a>
+          </div>
+          <div class="dropdown">
+            <a class="nav-link" href="/#detailsContainer2"> XİDMƏTLƏRİMİZ </a>
+          </div>
+
+          <!-- Remaining links -->
+          <a href="/#carousellogos">Partnyorlar</a>
+          <a href="/#detailsContainer2">Xəbərlər</a>
+          <a href="/#detailsContainer2">KİTABLAR</a>
+        </nav>
+
+        <div class="search-bar">
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Details/Layihələr Section -->
+    
+
+    <!-- About Us Section -->
+    <section id="haqqimizda" class="py-5">
+      <div class="container">
+        <h2 class="text-start mb-5">Haqqımızda</h2>
+        <div class="row justify-content-start">
+          <div class="col-lg-10">
+          
+            <div class="text-left">
+              <p class="mb-2">
+                <strong> <i class="bi bi-check-circle-fill text-fail me-2"></i> İT sahəsində 20 illik təcrübə: </strong>
+                Biz, İT sektorunda 20 illik təcrübəmizlə, müxtəlif sənaye sahələrində lider layihələrə imza atmışıq.
+              </p>
+              <p class="mb-2">
+                <strong><i class="bi bi-check-circle-fill  text-fail me-2"></i> Texnika üzrə PhD elmi dərəcə: </strong>
+                Dərin tədqiqat və texniki biliklərimiz PhD dərəcəsi ilə təsdiqlənmişdir.
+              </p>
+              <p class="mb-2">
+                <strong><i class="bi bi-check-circle-fill  text-fail me-2"></i> Oracle üzrə Beynəlxalq sertifikatlar: </strong>
+                Tanınmış Oracle sertifikatlarımız, platforma üzrə geniş təcrübəmizi göstərir.
+              </p>
+              <p class="mb-2">
+                <strong><i class="bi bi-check-circle-fill text-fail me-2"></i> Oracle Certified Master-ın ən yüksək dərəcəsi: </strong>
+                Bu unikal sertifikat, mürəkkəb problemlərin həllində mükəmməlliyimizi nümayiş etdirir.
+              </p>
+              <p class="mb-2">
+                <strong><i class="bi bi-check-circle-fill text-fail  me-2"></i> Xarici və yerli biznes tərəfdaşlarımız: </strong>
+                Geniş biznes şəbəkəmiz bizə milli və beynəlxalq səviyyədə iş imkanları yaradır.
+              </p>
+              <p>
+                <strong><i class="bi bi-check-circle-fill text-fail  me-2"></i> Uğurlu layihələr: </strong>
+                Keçmiş uğurlu layihələrimiz sayəsində, müştəri məmnuniyyəti və keyfiyyətli xidmətlərimizi təsdiqləmişik.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team/Komanda Section -->
+    <section id="komanda" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-start mb-5" style="text-transform: none">Müəllimlərimiz</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-6">
+            <div class="card card-person h-100">
+              <img src="/aboutus/samirmuellim.jpeg" class="card-img-top" alt="Samir Səmədov" />
+              <div class="card-body">
+                <h5 class="card-title">Səmədov Samir Bəxtiyar oğlu</h5>
+                <p class="card-text">
+                  2005-ci ildə Bakı Dövlət Universitetinin Tətbiqi Riyaziyyat və Kibernetika fakültəsinin İnformatika ixtisasını fərqlənmə diplomu ilə bitirib. 2008-ci ildə magistratura pilləsini
+                  fərqlənmə diplomu ilə tamamlayaraq aspiranturaya daxil olmuş və texnika üzrə fəlsəfə doktoru dərəcəsini almışdır. 15 ildən artıq fərqli İT sahələrində (Bank, Card & Data Processing,
+                  dövlət sektoru) çalışmışdır. 2013-cü ildən Oracle şirkətinin elit qrupunun üzvü olaraq Oracle 11g Certified Master (OCM) titulunu qazanmışdır.
+                </p>
+                <p class="card-text">Oracle imtahanları üzrə uğurlar:</p>
+                <ul>
+                  <li>120-007: Oracle9i: SQL</li>
+                  <br />
+                  <li>1Z0-031: Oracle9i: DBA Fundamentals I</li>
+                  <br />
+                  <li>1Z0-033: Oracle9i: Performance Tuning</li>
+                  <br />
+                  <li>120-101: PL/SQL proqramlaşdırma</li>
+                  <br />
+                  <li>1Z0-032: Oracle9i: DBA Fundamentals 2</li>
+                  <br />
+                  <li>1Z0-040: Oracle Database 10g: Yeni xüsusiyyətlər</li>
+                  <br />
+                  <li>1Z0-047: Oracle Database: SQL Certified Expert</li>
+                  <br />
+                  <li>1Z0-050: Oracle Database 11g: Yeni xüsusiyyətlər</li>
+                  <br />
+                  <li>1Z0-046: Oracle Database 10g: Linux-da Oracle İdarəçiliyi</li>
+                  <br />
+                  <li>Oracle 11g Certified Master 2 Practice Days Exam</li>
+                  <br />
+                  <li>1Z0-060: Oracle Database 12c-ə keçid</li>
+                  <br />
+                  <li>120-931: Oracle Autonomous Database Cloud 2019 Certified Specialist</li>
+                  <br />
+                  <li>1Z0-1072: Oracle Cloud Infrastructure 2019 Architect Associate</li>
+                  <br />
+                  <li>1Z0-1085: Oracle Cloud Infrastructure Foundations 2020</li>
+                </ul>
+                <p class="card-text">
+                  Həmçinin SQL və digər texnologiyalar üzrə geniş təcrübəyə malikdir. Ətraflı məlumat üçün:
+                  <a href="http://www.ocm.az" target="_blank" style="color: #1e3c72">www.ocm.az</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 1: Səmədov Ramin Bəxtiyar oğlu -->
+          <div class="col-md-6 col-lg-6">
+            <div class="card card-person h-100">
+              <img src="/aboutus/raminmuellim.jpeg" class="card-img-top" alt="Ramin Səmədov" />
+              <div class="card-body">
+                <h5 class="card-title">Səmədov Ramin Bəxtiyar oğlu</h5>
+                <p class="card-text">
+                   Texnika üzrə Fəlsəfə Doktoru, 15 ildən artıq İT sahəsi üzrə çalışır.</p>
+                  <p>Bakı Dövlət Universitetinin Tətbiqi Riyaziyyat və Kibernetika fakültəsinin tələbəsi olub. Bakalavr, maqistratura və doktorantura pilləsini uğurlu şəkildə məhz həmin Universitetdə başa vurub.</p>
+                  <p>Azərbaycanın ən böyük İT sahələrində (Telecom, Bank və Processing), müxtəlif rəhbər vəzifələrdə çalışıb. Ən iri Bank sistemləri sayılan Oracle Flexcube və Processing sistemi Tranzaxis TX miqrasiyalarında yaxından iştirak edib, uğurlu nəticələr əldə edib.</p>
+                  <p>Oracle verilənlər bazasının inzibatcılığını, PL/SQL proqramlaşdırma dilini və SQL sorğu dilini mükəmməl bildiyinə görə - Oracle verilənlər bazası üzrə ekspertdi. Bundan əlavə JAVA üzrə proqramlaşdırma ilə məşğuldur. Həmçinin Linux ƏS və Cloud texnologiyaları üzrə dərin biliklərə malikdir.</p>
+                  <p>Hal-hazırda elmi-praktiki və innovativ fəaliyyətini davam etdirir. Bir neçə elmi əsərlərin müəllifidir və ölkəmizi bir necə xarici konfranslarda uğurla təmsil edib.</p>
+              
+                </p>
+                <p class="mb-0">
+                  Əlaqə:
+                  <a href="mailto:ramin.samedov@gmail.com" style="color: #1e3c72">ramin.samedov@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 2: Səmədov Samir Bəxtiyar oğlu -->
+        </div>
+      </div>
+    </section>
+
+       <section class="contact-section">
+      <div class="contact-container">
+        <div class="left-contact">
+          <div class="brand-area">
+            <a href="/">
+              <img src="/sql/icon/logo.png" alt="SQL Logo" />
+            </a>
+            <div class="brand-text">
+              <h1>IT CONSULTING</h1>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <div class="info-block"><span>Phone:</span><a href="tel:+994559409565">+994 55 940 95 65</a></div>
+            <div class="info-block" style="width: 170px; margin-right: 27px"><span>Email:</span> info@sql.az</div>
+          </div>
+
+          <div class="nav-grid">
+  <a href="/#detailsContainer" id="detailcontainerbtn1">Ümumi məlumat</a>
+  <a href="/#detailsContainer2" id="detailcontainerbtn2">Xidmətlərimiz</a>
+  <a href="/#carousellogos">Partnyorlar</a>
+  <a href="/#detailsContainer2">Xəbərlər</a>
+  <a href="/#detailsContainer2" id="detailcontainerbtn3">Kitablar</a>
+</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="scroll-to-top" id="scrollToTop">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 4l-6 6h4v6h4v-6h4l-6-6z" />
+      </svg>
+    </div>
+
+    <a href="https://wa.me/+994559409565?text=Salam kursla bağlı məlumat almaq istəyərdim." target="_blank" class="whatsapp-float" rel="noopener noreferrer">
+      <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-white text-white text-center py-2">
+      <p>© 2025 SQL.AZ Konsultinq şirkəti. Bütün hüquqlar qorunur.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

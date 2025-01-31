@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL Konsultinq şirkəti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="icon" type="image/png" href="/sql/icon/logo.png" sizes="16x16" />
+    <meta
+      name="description"
+      content="SQL.AZ: İT sahəsində 20 illik təcrübə, Oracle beynəlxalq sertifikatları, PL/SQL proqramlaşdırma, məlumat bazası inzibatçılığı və müxtəlif sənayelərə konsaltinq xidmətləri."
+    />
+    <meta name="keywords" content="SQL.AZ, İT Konsultinq, PL/SQL, Oracle sertifikat, məlumat bazası, rəqəmsal həllər, təlimlər, Azərbaycan, Texnoloji həllər" />
+
+    <!-- Canonical URL (if you have a final production domain) -->
+    <link rel="canonical" href="https://www.sql.az/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="SQL.AZ: İT Konsultinq & Oracle Təlimləri" />
+    <meta property="og:description" content="SQL.AZ 20 illik təcrübə ilə İT konsultinq, Oracle çözümləri, PL/SQL təlimləri və texnoloji inteqrasiya XİDMƏTLƏRİMİZi təklif edir." />
+    <meta property="og:image" content="https://www.sql.az/featured-image.jpg" />
+    <meta property="og:url" content="https://www.sql.az/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SQL.AZ: İT Konsultinq & Oracle Təlimləri" />
+    <meta name="twitter:description" content="SQL.AZ 20 illik təcrübə ilə İT konsultinq, Oracle çözümləri, PL/SQL təlimləri və texnoloji inteqrasiya XİDMƏTLƏRİMİZi təklif edir." />
+    <meta name="twitter:image" content="https://www.sql.az/featured-image.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/sql/icon/logo.png" sizes="16x16" />
+
+    <!-- Schema.org JSON-LD (Optional, but good for SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SQL.AZ Konsultinq Şirkəti",
+        "url": "https://www.sql.az/",
+        "logo": "https://www.sql.az/sql/icon/logo.png",
+        "sameAs": ["https://www.facebook.com/sqlaz", "https://www.instagram.com/sqlaz"],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+994 55 940 95 65",
+            "contactType": "customer service",
+            "areaServed": "AZ"
+          }
+        ]
+      }
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="header container d-flex justify-content-between align-items-center h-100">
+      <div class="brand">IT CONSULTING</div>
+      <div class="language-switcher d-flex">
+        <div class="social-icons me-5 pe-4">
+          <a href="https://www.facebook.com/azesql" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/sql.az" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div> 
+      </div>
+    </header>
+
+    <header class="navbar">
+      <div class="container h-100">
+        <div class="logo">
+          <a href="/">
+            <img src="/sql/icon/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <nav class="nav-links d-flex align-items-center pe-2 me-5">
+          <div class="dropdown">
+            <a class="nav-link" id="detailcontainerbtn1" href="#detailsContainer"> ÜMUMİ MƏLUMAT </a>
+          </div>
+          <div class="dropdown">
+            <a class="nav-link" id="detailcontainerbtn2" href="#detailsContainer2"> XİDMƏTLƏRİMİZ </a>
+          </div>
+          <a href="#carousellogos">Partnyorlar</a>
+          <a href="#detailsContainer2">Xəbərlər</a>
+          <a href="#detailsContainer2" id="detailcontainerbtn3">KİTABLAR</a>
+        </nav>
+
+        <div class="search-bar"></div>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbarmain navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">SQL Konsultinq</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">ÜMUMİ MƏLUMAT</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mission">Missiyamız</a></li>
+            <li class="nav-item"><a class="nav-link" href="#training">Təlim</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Qaleriya</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Əlaqə</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="parallax mb-5"></div>
+    <div class="gridcontainer container py-3" id="detailsContainer">
+      <div class="card card1 horizontal-card">
+        <div class="image-area" style="background-image: url('/sql/foto/1.png')"></div>
+        <div class="text-area"id="showPremiumBtn" style="cursor: pointer">
+          <div class="px-3 pt-3"  >
+            <button class="bubble-header text-uppercase about" style="width: 167px">ÜMUMİ MƏLUMAT</button>
+            <h3>İT sahəsində 20 illik təcrübə</h3>
+            <p>İT sektorundakı 20 illik təcrübəmiz ərzində biz müxtəlif sənaye sahələrində mühüm layihələrdə iştirak edərək sektordakı inkişaflara liderlik etmişik.</p>
+           
+           
+            <p>Oracle üzrə Beynəlxalq sertifikatlar: Beynəlxalq səviyyədə tanınmış Oracle sertifikatlarımızla biz Oracle platformasında dərin təcrübə və bacarıqlara malik olduğumuzu göstəririk.</p>
+          </div>
+          <div class="card-footer w-100">
+            <a>Ətraflı</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card2">
+        <img src="/sql/foto/2.png" alt="Image" />
+      </div>
+
+      <div class="card card3" style="cursor: pointer" id="showPremiumOurGoalBtn">
+        <div class="text-area">
+          <div class="px-3 mt-4">
+            <div class="bubble-header goal" style="width: 192px">TEXNOLOJİ HƏLLƏR</div>
+            <h3>Layihənin idarə edilməsi</h3>
+            <p>Texnologiya layihələrinin uğurlu planlanması, həyata keçirilməsi və idarə olunması üçün peşəkar dəstək.</p>
+          </div>
+          <div class="card-footer">
+            <a>Ətraflı</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card4" id="showOurMission" style="cursor: pointer">
+        <div class="card4-top">
+          <div class="card4-label mt-3 text-uppercase">MİSSİYAMIZ</div>
+        </div>
+        <div class="card4-content">
+          <h3>Rəqəmsal biznes həlli</h3>
+          <p>Müştərilərimizə texnologiyadan səmərəli istifadə edərək bizneslərini inkişaf etdirmək üçün lazım olan bilik, bacarıq və resursları təqdim etmək.</p>
+        </div>
+        <div class="card4-footer">
+          <a>Ətraflı</a>
+        </div>
+      </div>
+
+      <div class="card card5" id="showgallery" style="cursor: pointer">
+        <div class="card5-header mt-4">
+          <div class="gallery-outline text-uppercase">qalereya</div>
+          <h3>Vizual məzmun</h3>
+          <p>Korporativ tədbirlərimizə aid xüsusi anları və mühüm məqamları burada izləyə bilərsiniz.</p>
+        </div>
+        <div class="card5-footer">
+          <a>Ətraflı</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <button class="gobackbtn gallery d-none" id="galleryback"><span class="arrow">&#8592;</span> Geri</button>
+    </div>
+
+    <div class="premium-subtitle container align-items-center justify-content-between gallerytitle" id="gallerytitle">
+      <h2 class="premium-heading" style="border-bottom: 4px solid #eb003f; width: 150px">Qaleriya</h2>
+    </div>
+
+    <section class="gallery-grid" id="gallerycontainer">
+      <div
+        class="gallery-item item-building"
+        data-images='[
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0004.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0008.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0009.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0012.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0014.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0018.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0022.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9957.jpg", 
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9968.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9968.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9977.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9983.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9991.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9994.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9996.jpg", 
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/cover.jpg"
+      ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <p style="width: 82%; margin: 0 auto;">Azeri Card və digər korporativ qurumlar ilə SQL təlimi və mükafatlandırma tədbiri</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Example: Certification -->
+      <div
+        class="gallery-item item-certification"
+        data-images='[
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0961.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0967.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0987.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0973.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0991.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0997.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1007.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1011.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1020.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1032.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1040.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1052.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1068.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1089.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1094.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1108.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1134.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1145.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1153.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1166.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1175.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1189.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/IMG_0493.jpg",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/IMG_0495.jpg",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/IMG_0496.jpg",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/cover.jpg"
+        ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay"> 
+            <p style="width: 60%;">Pasha Holding ilə korporativ sql təlimi və mükafatlandırma tədbiri</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Coder (spans 2 rows on the right) -->
+      <div
+        class="gallery-item item-coder"
+        data-images='[
+        "/gallery/newphotos/OCA1Z0-071Sertifikattəltifetmətədbiri/IMG_6650.JPG",
+        "/gallery/newphotos/OCA1Z0-071Sertifikattəltifetmətədbiri/sql2.jpg",
+        "/gallery/newphotos/OCA1Z0-071Sertifikattəltifetmətədbiri/cover.jpg"
+        ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay"> 
+            <p>Oracle beynəlxalq OCA 1Z0-071  <br> Sertifikat təltifetmə tədbiri</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/1 (1).jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/1.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/10.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/12.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/2.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/3.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/4.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/5.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/6.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/7.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/8.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/9.jpg", -->
+      <!-- Coder (spans 2 rows on the right) -->
+      <div
+        class="gallery-item item-album"
+        data-images='[
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5381919022519530022_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045350_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045355_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045367_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045386_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045387_w (1).jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045407_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045413_w.jpg", 
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045421_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045432_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045454_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045455_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045456_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045460_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045460_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045487_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045496_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045502_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045512_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045514_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045516_w.jpg",
+        "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/cover.jpg"
+      ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <!-- <h2>SERTİFİKATLAŞMA TƏDBİRİ</h2> -->
+            <p style="width: 50%;">3-cü nəşr SQL kitabının təqdimatı</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Laptop (large, row2) -->
+      <div
+        class="gallery-item item-laptop"
+        data-images='[
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_10.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_11.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_2.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_3.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_4.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_5.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_7.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_8.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_9.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/cover.JPG"
+        ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <p style="width: 60%;">Ziraat Bank ilə korporativ SQL təlimi və mükafatlandırma tədbiri</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Structure (small, row2) -->
+      <div
+        class="gallery-item item-structure"
+        data-images='[
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5381919022519530022_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045350_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045355_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045367_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045386_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045387_w (1).jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045407_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045413_w.jpg", 
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045421_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045432_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045454_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045455_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045456_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045460_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045460_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045487_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045496_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045502_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045512_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045514_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045516_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/cover.jpg"
+         ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <p>PL-SQL və SQL təlimi və mükafatlandırma tədbiri</p>
+          </div>
+        </a>
+      </div>
+      <div
+        class="gallery-item item-building"
+        data-images='[
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0004.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0008.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0009.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0012.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0014.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0018.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0022.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9957.jpg", 
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9968.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9968.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9977.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9983.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9991.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9994.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9996.jpg", 
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/cover.jpg"
+      ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <p style="width: 82%;margin: 0 auto;">Azeri Card və digər korporativ qurumlar ilə SQL təlimi və mükafatlandırma tədbiri</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Example: Certification -->
+      <div
+        class="gallery-item item-certification"
+        data-images='[
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0961.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0967.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0987.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0973.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0991.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0997.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1007.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1011.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1020.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1032.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1040.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1052.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1068.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1089.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1094.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1108.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1134.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1145.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1153.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1166.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1175.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1189.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/IMG_0493.jpg",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/IMG_0495.jpg",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/IMG_0496.jpg",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/cover.jpg"
+        ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay"> 
+            <p style="width: 60%;">Pasha Holding ilə korporativ sql təlimi və mükafatlandırma tədbiri</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Coder (spans 2 rows on the right) -->
+      <div
+        class="gallery-item item-coder"
+        data-images='[
+        "/gallery/newphotos/OCA1Z0-071Sertifikattəltifetmətədbiri/IMG_6650.JPG",
+        "/gallery/newphotos/OCA1Z0-071Sertifikattəltifetmətədbiri/sql2.jpg",
+        "/gallery/newphotos/OCA1Z0-071Sertifikattəltifetmətədbiri/cover.jpg"
+        ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay"> 
+            <p>Oracle beynəlxalq OCA 1Z0-071  <br> Sertifikat təltifetmə tədbiri</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/1 (1).jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/1.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/10.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/12.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/2.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/3.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/4.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/5.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/6.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/7.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/8.jpg",
+      "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/9.jpg", -->
+      <!-- Coder (spans 2 rows on the right) -->
+      <div
+        class="gallery-item item-album"
+        data-images='[
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5381919022519530022_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045350_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045355_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045367_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045386_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045387_w (1).jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045407_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045413_w.jpg", 
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045421_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045432_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045454_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045455_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045456_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045460_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045460_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045487_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045496_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045502_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045512_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045514_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045516_w.jpg",
+        "/gallery/newphotos/PL-SQLvəSQLtəlimivəmükafatlandırmatədbiri/cover.jpg"
+      ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <!-- <h2>SERTİFİKATLAŞMA TƏDBİRİ</h2> -->
+            <p style="width: 50%;">3-cü nəşr SQL kitabının təqdimatı</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Laptop (large, row2) -->
+      <div
+        class="gallery-item item-laptop"
+        data-images='[
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_10.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_11.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_2.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_3.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_4.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_5.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_7.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_8.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_9.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/cover.JPG"
+        ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <p style="width: 60%;">Ziraat Bank ilə korporativ SQL təlimi və mükafatlandırma tədbiri</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Structure (small, row2) -->
+      <div
+        class="gallery-item item-structure"
+        data-images='[
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5381919022519530022_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045350_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045355_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045367_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045386_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045387_w (1).jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045407_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045413_w.jpg", 
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045421_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045432_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045454_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045455_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045456_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045460_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045460_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045487_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045496_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045502_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045512_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045514_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045516_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/cover.jpg"
+         ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <p>PL-SQL və SQL təlimi və mükafatlandırma tədbiri</p>
+          </div>
+        </a>
+      </div>
+      <div
+        class="gallery-item item-building"
+        data-images='[
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0004.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0008.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0009.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0012.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0014.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0018.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC0022.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9957.jpg", 
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9968.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9968.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9977.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9983.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9991.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9994.jpg",
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/_DSC9996.jpg", 
+        "/gallery/newphotos/AzeriCardvəZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/cover.jpg"
+      ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <p style="width: 82%;
+    margin: 0 auto;">Azeri Card və digər korporativ qurumlar ilə SQL təlimi və mükafatlandırma tədbiri</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Example: Certification -->
+      <div
+        class="gallery-item item-certification"
+        data-images='[
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0961.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0967.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0987.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0973.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0991.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC0997.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1007.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1011.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1020.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1032.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1040.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1052.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1068.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1089.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1094.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1108.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1134.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1145.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1153.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1166.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1175.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/_DSC1189.JPG",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/IMG_0493.jpg",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/IMG_0495.jpg",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/IMG_0496.jpg",
+        "/gallery/newphotos/PashaHoldingiləkorporativsqltəlimivəmükafatlandırmatədbiri/cover.jpg"
+        ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay"> 
+            <p style="width: 60%;">Pasha Holding ilə korporativ sql təlimi və mükafatlandırma tədbiri</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Coder (spans 2 rows on the right) -->
+      <div
+        class="gallery-item item-coder"
+        data-images='[
+        "/gallery/newphotos/OCA1Z0-071Sertifikattəltifetmətədbiri/IMG_6650.JPG",
+        "/gallery/newphotos/OCA1Z0-071Sertifikattəltifetmətədbiri/sql2.jpg",
+        "/gallery/newphotos/OCA1Z0-071Sertifikattəltifetmətədbiri/cover.jpg"
+        ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay"> 
+            <p>Oracle beynəlxalq OCA 1Z0-071 <br/> sertifikatının təqdimetmə tədbiri.</p>
+          </div>
+        </a>
+      </div>
+ 
+      <div
+        class="gallery-item item-album"
+        data-images='[
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5381919022519530022_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045350_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045355_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045367_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045386_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045387_w (1).jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045407_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045413_w.jpg", 
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045421_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045432_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045454_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045455_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045456_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045460_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045460_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045487_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045496_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045502_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045512_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045514_w.jpg",
+        "/gallery/newphotos/SQL3cünəşrkitabıntəqdimatı/photo_5384294556046045516_w.jpg"
+      ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <!-- <h2>SERTİFİKATLAŞMA TƏDBİRİ</h2> -->
+            <p style="width: 100%;">3-cü nəşr  SQL  "Asan Yanaşma Yolu" <br/> kitabının təqdimatı</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Laptop (large, row2) -->
+      <div
+        class="gallery-item item-laptop"
+        data-images='[
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_10.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_11.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_2.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_3.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_4.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_5.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_7.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_8.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/IMG_9.JPG",
+        "/gallery/newphotos/ZiraatBankiləkorporativSQLtəlimivəmükafatlandırmatədbiri/cover.JPG"
+        ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <p style="width: 60%;">Ziraat Bank ilə korporativ SQL təlimi və mükafatlandırma tədbiri</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Structure (small, row2) -->
+      <div
+        class="gallery-item item-structure"
+        data-images='[
+        "/gallery/newphotos/raminmuellim/2 (2)-min.jpg",
+        "/gallery/newphotos/raminmuellim/4 (2)-min.jpg",
+        "/gallery/newphotos/raminmuellim/COVER-min.jpg",
+        "/gallery/newphotos/raminmuellim/IMG_6819-min.jpg",
+        "/gallery/newphotos/raminmuellim/IMG_9309-min.jpg",
+        "/gallery/newphotos/raminmuellim/IMG_9316-min.jpg",
+        "/gallery/newphotos/raminmuellim/IMG_9317-min.jpg",
+        "/gallery/newphotos/raminmuellim/IMG_9318-min.jpg",
+        "/gallery/newphotos/raminmuellim/IMG_9319-min.jpg",
+        "/gallery/newphotos/raminmuellim/IMG_9323-min.jpg",
+        "/gallery/newphotos/raminmuellim/n-min.jpg" 
+        
+         ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <p style="width: 72%;">"Azərişıq" ASC ilə SQL və PL/SQL təlimləri</p>
+          </div>
+        </a>
+      </div>
+      <!-- Structure (small, row2) -->
+      <div
+        class="gallery-item  item-new"
+        data-images='[
+ 
+         ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <p></p>
+          </div>
+        </a>
+      </div>
+      <!-- Structure (small, row2) -->
+      <div
+        class="gallery-item  item-new2"
+        data-images='[ 
+        "/gallery/newphotos/plsqlteqdimat/464472050_9275273782496720_8782066845583877479_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464464266_9275273222496776_5240950036539419362_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464498144_9275273789163386_3337961749450214259_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464517766_9275273245830107_3180507282696330582_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464521575_9275273465830085_1079816780899092238_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464521575_9275273809163384_8952978735339164207_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464521981_9275273219163443_642912569415311455_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464522302_9275273812496717_4672664049368310632_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464528695_9275273232496775_8275678616882850761_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464528853_9275273799163385_5963075621070233521_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464566480_9275273475830084_8702621812163796300_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464566762_9275273499163415_446624107727458123_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464566788_9275273229163442_1829938180157428341_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464567378_9275273472496751_797885670383386007_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464575182_9275273489163416_1149093905346899550_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464575401_9275273795830052_8694028335388679594_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464590895_9275273225830109_7672254616399620139_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464597330_9275273482496750_2268350960568806515_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464603358_9275273462496752_5690370702323654558_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/464618110_9275273242496774_6808595175049774628_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/473161450_1006795884816042_8460166300070992206_n.jpg",
+        "/gallery/newphotos/plsqlteqdimat/cover2.jpg",
+        "/gallery/newphotos/plsqlteqdimat/cover.jpg"
+         ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <p style="width: 50%;">PL/SQL "Peşəkarlığa Gedən Yol" kitabının təqdimatı</p>
+          </div>
+        </a>
+      </div>
+      <!-- Structure (small, row2) -->
+      <div
+        class="gallery-item  item-new3"
+        data-images='[
+        "/gallery/newphotos/HACKATHON/IMG_9161-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9162-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9168-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9208-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9234-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9252-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9254-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9263-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9266-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9268-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9274-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9282-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9285-min.JPG", 
+        "/gallery/newphotos/HACKATHON/IMG_9391-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9393-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9419-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9422-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9426-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9430-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9439-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9444-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9448-min.JPG",
+        "/gallery/newphotos/HACKATHON/IMG_9457-min.JPG"
+      
+         ]'
+      >
+        <a href="javascript:;">
+          <div class="top-right-icon"></div>
+          <div class="overlay center-overlay">
+            <p>SQL üzrə ilk Hackhathon Yarışı</p>
+          </div>
+        </a>
+      </div>
+
+  
+
+    </section> 
+
+    <!-- Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold">Gallery</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modalGalleryBody"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hidden images -->
+    <a class="fancybox-trigger" data-fancybox="gallery" style="display: none" data-src="/sql/foto/1.png"></a>
+    <a class="fancybox-trigger" data-fancybox="gallery" style="display: none" data-src="/sql/foto/2.png"></a>
+    <a class="fancybox-trigger" data-fancybox="gallery" style="display: none" data-src="/sql/foto/3.png"></a>
+    <a
+      style="display: none"
+      data-fancybox="gallery"
+      data-type="html"
+      data-src="
+      <video width='640' height='360' controls autoplay>
+        <source src='/video/samples4.mp4' type='video/mp4'>
+        Your browser does not support the video tag.
+      </video>"
+      href="javascript:;"
+    >
+      Play MP4 Video
+    </a>
+
+    <div class="container ourmissionpremium" id="ourmissioncontainer">
+      <button class="gobackbtn news" id="ourmissionback"><span class="arrow">&#8592;</span> Geri</button>
+      <div class="premium-subtitle d-flex align-items-center justify-content-between" id="#detailsContainer">
+        <h2 class="premium-heading news">Missiyamız</h2>
+        
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="mb-3" style="font-weight: 700;color: #1e3c72;font-size: 20px;">Rəqəmsal biznes həlli</h2>
+          <p>
+            SQL.az texnologiya sahəsində ixtisaslaşmış təlim və məsləhət xidməti təminatçısıdır. SQL.az-ın məqsədi müştərilərinə innovativ həllər təqdim etməklə müəssisələrin rəqəmsal transformasiya
+            proseslərini asanlaşdırmaqdır.
+          </p>
+          <p>Bütün dünyada texnologiya sahəsində istinad nöqtəsi olmaq və müştərilərimizin uğurunu dəstəkləmək.</p>
+          <a href="/ourmissionpage/ourmissionpage.html" class="btn btn-outline-primary mt-2">Detallı</a>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="/ourmission/2.jpg" alt="Əllərin birləşdirilməsi şəkli" class="img-fluid img-limit" />
+        </div>
+      </div>
+    </div>
+    <!-- PREMIUM ABOUT US -->
+    <div class="premium-aboutus-container" id="premiumAboutUs">
+      <button class="gobackbtn" id="aboutusback"><span class="arrow">&#8592;</span> Geri</button>
+      <div class="premium-subtitle d-flex align-items-center justify-content-between" id="detailsContainer">
+        <h2 class="premium-heading">Ümumi məlumat</h2>
+        
+      </div>
+
+      <div class="premium-cards-grid">
+        <!-- CARD 1 -->
+          <div class="premium-card">
+            <div class="premium-icon"><img src="/sql/icon/abouticons/20 illik.png" /></div>
+            <h3 class="premium-title">İT üzrə<br />20 illik təcrübə</h3>
+          </div>
+
+        <!-- CARD 2 -->
+          <div class="premium-card">
+            <div class="premium-icon"><img src="/sql/icon/abouticons/phd.png" /></div>
+            <h3 class="premium-title">Texnika üzrə<br />PhD elmi dərəcə</h3>
+          </div>
+
+        <!-- CARD 3 -->
+          <div class="premium-card">
+            <div class="premium-icon"><img src="/sql/icon/abouticons/oracle uzre.jpg" /></div>
+            <h3 class="premium-title">Oracle üzrə<br />Beynəlxalq sertifikatlar</h3>
+          </div>
+
+        <!-- CARD 4 -->
+          <div class="premium-card">
+            <div class="premium-icon"><img src="/sql/icon/abouticons/oracle sert.png" /></div>
+            <h3 class="premium-title">Oracle Certified Master-in<br />ən yüksək dərəcəsi</h3>
+          </div>
+
+        <!-- CARD 5 -->
+          <div class="premium-card">
+            <div class="premium-icon"><img src="/sql/icon/abouticons/xarici.png" /></div>
+            <h3 class="premium-title">Xarici və yerli biznes<br />tərəfdaşlarımız</h3>
+          </div>
+
+        <!-- CARD 6 -->
+          <div class="premium-card">
+            <div class="premium-icon"><img src="/sql/icon/abouticons/ugurlu.png" /></div>
+            <h3 class="premium-title">Uğurlu layihələr,<br />yüksək nəticələr</h3>
+          </div>
+      </div>
+
+         <!-- About Us Section -->
+    <section id="haqqimizda" class="py-5">
+      <div class="container">
+        <h2 class="text-start mb-5">Haqqımızda</h2>
+        <div class="row justify-content-start">
+          <div class="col-lg-10">
+          
+            <div class="text-left">
+              <p class="mb-2">
+                <strong> <i class="bi bi-check-circle-fill text-fail me-2"></i> İT sahəsində 20 illik təcrübə: </strong>
+                Biz, İT sektorunda 20 illik təcrübəmizlə, müxtəlif sənaye sahələrində lider layihələrə imza atmışıq.
+              </p>
+              <p class="mb-2">
+                <strong><i class="bi bi-check-circle-fill  text-fail me-2"></i> Texnika üzrə PhD elmi dərəcə: </strong>
+                Dərin tədqiqat və texniki biliklərimiz PhD dərəcəsi ilə təsdiqlənmişdir.
+              </p>
+              <p class="mb-2">
+                <strong><i class="bi bi-check-circle-fill  text-fail me-2"></i> Oracle üzrə Beynəlxalq sertifikatlar: </strong>
+                Tanınmış Oracle sertifikatlarımız, platforma üzrə geniş təcrübəmizi göstərir.
+              </p>
+              <p class="mb-2">
+                <strong><i class="bi bi-check-circle-fill text-fail me-2"></i> Oracle Certified Master-ın ən yüksək dərəcəsi: </strong>
+                Bu unikal sertifikat, mürəkkəb problemlərin həllində mükəmməlliyimizi nümayiş etdirir.
+              </p>
+              <p class="mb-2">
+                <strong><i class="bi bi-check-circle-fill text-fail  me-2"></i> Xarici və yerli biznes tərəfdaşlarımız: </strong>
+                Geniş biznes şəbəkəmiz bizə milli və beynəlxalq səviyyədə iş imkanları yaradır.
+              </p>
+              <p>
+                <strong><i class="bi bi-check-circle-fill text-fail  me-2"></i> Uğurlu layihələr: </strong>
+                Keçmiş uğurlu layihələrimiz sayəsində, müştəri məmnuniyyəti və keyfiyyətli xidmətlərimizi təsdiqləmişik.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team/Komanda Section -->
+    <section id="komanda" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-start mb-5" style="text-transform: none">Müəllimlərimiz</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-6">
+            <div class="card card-person h-100">
+              <img src="/aboutus/samirmuellim.jpeg" class="card-img-top" alt="Samir Səmədov" />
+              <div class="card-body">
+                <h5 class="card-title">Səmədov Samir Bəxtiyar oğlu</h5>
+                <p class="card-text">
+                  2005-ci ildə Bakı Dövlət Universitetinin Tətbiqi Riyaziyyat və Kibernetika fakültəsinin İnformatika ixtisasını fərqlənmə diplomu ilə bitirib. 2008-ci ildə magistratura pilləsini
+                  fərqlənmə diplomu ilə tamamlayaraq aspiranturaya daxil olmuş və texnika üzrə fəlsəfə doktoru dərəcəsini almışdır. 15 ildən artıq fərqli İT sahələrində (Bank, Card & Data Processing,
+                  dövlət sektoru) çalışmışdır. 2013-cü ildən Oracle şirkətinin elit qrupunun üzvü olaraq Oracle 11g Certified Master (OCM) titulunu qazanmışdır.
+                </p>
+                <p class="card-text">Oracle imtahanları üzrə uğurlar:</p>
+                <ul>
+                  <li>120-007: Oracle9i: SQL</li>
+                  <br />
+                  <li>1Z0-031: Oracle9i: DBA Fundamentals I</li>
+                  <br />
+                  <li>1Z0-033: Oracle9i: Performance Tuning</li>
+                  <br />
+                  <li>120-101: PL/SQL proqramlaşdırma</li>
+                  <br />
+                  <li>1Z0-032: Oracle9i: DBA Fundamentals 2</li>
+                  <br />
+                  <li>1Z0-040: Oracle Database 10g: Yeni xüsusiyyətlər</li>
+                  <br />
+                  <li>1Z0-047: Oracle Database: SQL Certified Expert</li>
+                  <br />
+                  <li>1Z0-050: Oracle Database 11g: Yeni xüsusiyyətlər</li>
+                  <br />
+                  <li>1Z0-046: Oracle Database 10g: Linux-da Oracle İdarəçiliyi</li>
+                  <br />
+                  <li>Oracle 11g Certified Master 2 Practice Days Exam</li>
+                  <br />
+                  <li>1Z0-060: Oracle Database 12c-ə keçid</li>
+                  <br />
+                  <li>120-931: Oracle Autonomous Database Cloud 2019 Certified Specialist</li>
+                  <br />
+                  <li>1Z0-1072: Oracle Cloud Infrastructure 2019 Architect Associate</li>
+                  <br />
+                  <li>1Z0-1085: Oracle Cloud Infrastructure Foundations 2020</li>
+                </ul>
+                <p class="card-text">
+                  Həmçinin SQL və digər texnologiyalar üzrə geniş təcrübəyə malikdir. Ətraflı məlumat üçün:
+                  <a href="http://www.ocm.az" target="_blank" style="color: #1e3c72">www.ocm.az</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 1: Səmədov Ramin Bəxtiyar oğlu -->
+          <div class="col-md-6 col-lg-6">
+            <div class="card card-person h-100">
+              <img src="/aboutus/raminmuellim.jpeg" class="card-img-top" alt="Ramin Səmədov" />
+              <div class="card-body">
+                <h5 class="card-title">Səmədov Ramin Bəxtiyar oğlu</h5>
+                <div class="card-text">
+                   Texnika üzrə Fəlsəfə Doktoru, 15 ildən artıq İT sahəsi üzrə çalışır.</div>
+                  <p>Bakı Dövlət Universitetinin Tətbiqi Riyaziyyat və Kibernetika fakültəsinin tələbəsi olub. Bakalavr, maqistratura və doktorantura pilləsini uğurlu şəkildə məhz həmin Universitetdə başa vurub.</p>
+                  <p>Azərbaycanın ən böyük İT sahələrində (Telecom, Bank və Processing), müxtəlif rəhbər vəzifələrdə çalışıb. Ən iri Bank sistemləri sayılan Oracle Flexcube və Processing sistemi Tranzaxis TX miqrasiyalarında yaxından iştirak edib, uğurlu nəticələr əldə edib.</p>
+                  <p>Oracle verilənlər bazasının inzibatcılığını, PL/SQL proqramlaşdırma dilini və SQL sorğu dilini mükəmməl bildiyinə görə - Oracle verilənlər bazası üzrə ekspertdi. Bundan əlavə JAVA üzrə proqramlaşdırma ilə məşğuldur. Həmçinin Linux ƏS və Cloud texnologiyaları üzrə dərin biliklərə malikdir.</p>
+                  <p>Hal-hazırda elmi-praktiki və innovativ fəaliyyətini davam etdirir. Bir neçə elmi əsərlərin müəllifidir və ölkəmizi bir necə xarici konfranslarda uğurla təmsil edib.</p>
+              
+                </div>
+                <p class="mb-0">
+                  Əlaqə:
+                  <a href="mailto:ramin.samedov@gmail.com" style="color: #1e3c72">ramin.samedov@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 2: Səmədov Samir Bəxtiyar oğlu -->
+        </div>
+      </div>
+    </section>
+   
+
+    <!-- PREMIUM OUR GOAL -->
+    <div class="premium-aboutus-container" id="premiumOurGoal">
+      <button class="gobackbtn ourgoal" id="ourgoalback"><span class="arrow">&#8592;</span> Geri</button>
+      <div class="premium-subtitle d-flex align-items-center justify-content-between">
+        <h2 class="premium-heading ourgoal">Texnoloji həllər</h2>
+        
+      </div>
+
+      <div class="premium-cards-grid">
+        <!-- CARD 3 -->
+        <a href="/ourgoalpages/telimproqramlari2.html">
+          <div class="premium-card yellow">
+            <div class="premium-icon"><img src="/sql/icon/ourgoalicons/1.png" /></div>
+            <h3 class="premium-title">Təlim proqramları</h3>
+          </div>
+        </a>
+
+        <!-- CARD 2 -->
+        <a href="/ourgoalpages/telimproqramlari1.html">
+          <div class="premium-card yellow">
+            <div class="premium-icon"><img src="/sql/icon/ourgoalicons/2.png" /></div>
+            <h3 class="premium-title">Konsultinq xidmətləri</h3>
+          </div>
+        </a>
+        <!-- CARD 1 -->
+        <a href="/ourgoalpages/telimproqramlari.html">
+          <div class="premium-card yellow">
+            <div class="premium-icon"><img src="/sql/icon/ourgoalicons/3.png" /></div>
+            <h3 class="premium-title">IT layihələrin idarə edilməsi</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+
+    <div class="container py-2" id="carousellogos">
+      <div class="carousel-wrapper mx-auto">
+        <button
+          class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
+          type="button"
+          data-bs-target="#logoCarousel"
+          data-bs-slide="prev"
+          style="background: none; border: none"
+          aria-label="Previous"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <div id="logoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner d-flex">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-between">
+                <div class="logo-pill">
+                  <img src="/logos/1.png" alt="Pasha Bank" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/10.png" alt="Ziraat Bankasi" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/11.png" alt="Ziraat Bankasi" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/12.png" alt="Ziraat Bankasi" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/13.png" alt="Ziraat Bankasi" />
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex justify-content-between">
+                <div class="logo-pill">
+                  <img src="/logos/2.png" alt="Pasha Bank" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/3.png" alt="Ziraat Bankasi" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/4.png" alt="Ziraat Bankasi" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/5.png" alt="Ziraat Bankasi" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-between">
+                <div class="logo-pill">
+                  <img src="/logos/7.png" alt="Pasha Bank" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/8.png" alt="Ziraat Bankasi" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/9.png" alt="Ziraat Bankasi" />
+                </div>
+                <div class="logo-pill">
+                  <img src="/logos/6.png" alt="Ziraat Bankasi" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-next position-absolute top-50 end-0 translate-middle-y"
+          type="button"
+          data-bs-target="#logoCarousel"
+          data-bs-slide="next"
+          style="background: none; border: none"
+          aria-label="Next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- second cards -->
+
+    <div class="gridcontainer2 container pt-3 pb-5" id="detailsContainer2">
+      <div class="card secondcard2">
+        <img src="/sql/foto/4.png" alt="Image" />
+      </div>
+      <div class="card secondcard3" style="cursor: pointer">
+        <a class="text-area" href="./trainingpage/trainingpage.html">
+          <div class="px-3 mt-4">
+            <div class="bubble-header text-uppercase ourtraining" style="width: 150px">TƏLİMLƏRİMİZ</div>
+            <h3>SQL və PL/SQL təlimləri</h3>
+            <p>Biliklərinizi təkmilləşdirmək və Oracle sertifikatlarını əldə etmək üçün bizə qoşulun.</p>
+          </div>
+          <div class="card-footer">
+            <a>Ətraflı</a>
+          </div>
+        </a>
+      </div>
+
+      <div class="card secondcard4" id="consultinqbtn" style="cursor: pointer">
+        <div class="text-area">
+          <div class="px-3 pt-3">
+            <div class="bubble-header text-uppercase consultingservice" style="width: 251px">KONSULTASİYA XİDMƏTLƏRİ</div>
+            <h3>Beynəlxalq proqram təminatı</h3>
+            <p>Müxtəlif sistemlərin inteqrasiyası, məlumat bazalarının monitorinqi, məlumat analitikası və it təlimləri və digər uğurlu xidmətlər</p>
+          </div>
+          <div class="card-footer">
+            <a>Ətraflı</a>
+          </div>
+        </div>
+      </div>
+      <div class="card secondcard5" id="newsbtn" style="cursor: pointer">
+        <div class="secondcard5-header">
+          <div class="gallery-outline text-uppercase">Xəbərlər</div>
+          <h3>Şirkət əməkdaşlıqları və yeniliklər</h3>
+          <p>Şirkətimizin digər təşkilatlarla olan əməkdaşlıq və tərəfdaşlıq yeniliklərini izləyə bilərsiniz.</p>
+        </div>
+        <div class="secondcard5-footer">
+          <a>Ətraflı</a>
+        </div>
+      </div>
+      <a href="/ourbookpages/bookpage.html" style="color: black">
+        <div class="card secondcard1 horizontal-card">
+          <div class="text-area">
+            <div class="px-3 pt-3">
+              <button class="bubble-header text-uppercase ourbooks" style="width: 148px">KİTABLARIMIZ</button>
+              <h3>İlk SQL üzrə Azərbaycan dilində kitab</h3>
+              <p>2023-cü ildə nəşr olunan SQL “Asan Yanaşma Yolu” 3-cü nəşr kitabı müasir verilənlər bazası idarə edilməsi və sorğuların aparılması sahəsində əhatəli resursdur.</p>
+            </div>
+            <div class="card-footer w-100">
+              <a>Ətraflı</a>
+            </div>
+          </div>
+          <div class="image-area" style="background-image: url('/sql/foto/5.jpg')"></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="container ourtrainingcontainer py-4" id="ourtrainingcontainer">
+      <button class="gobackbtn news" id="trainingbackbtn"><span class="arrow">&#8592;</span> Geri</button>
+      <div class="premium-subtitle d-flex align-items-center justify-content-between">
+        <h2 class="premium-heading news">Təlim</h2>
+        <p style="border-bottom: 1px solid">Təlim haqqında ətraflı məlumat</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <img src="/trainingphotos/sayt yeni2.jpg" alt="Komanda iş başında" class="img-fluid ms-4 img-limit" />
+        </div>
+        <div class="col-md-6" style="padding-left: 30px">
+          <h2 class="mb-3">Bizim Təlimlərimiz</h2>
+          <p>
+            SQL.az brendi altında təqdim olunan kurslarla Oracle sertifikatları əldə etmək istəyənlər üçün hərtərəfli hazırlıq təklif edirik. Bu kurslar vasitəsilə siz “SQL Developer”, “Oracle
+            Database SQL Exam Preparation 1Z0-071”, “PL/SQL Developer”, “Oracle DBA Administrator”, “Power BI”, “Python”, “Talend Data Integration” sertifikatlaşdırma kimi fənlər üzrə ixtisaslaşmaq
+            imkanı əldə edə bilərsiniz.
+          </p>
+
+          <a href="/trainingpage/trainingpage.html" class="btn btn-outline-primary mt-2">Detallı</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container consultingservices" id="consultingheadercontainer" style="display: none">
+      <button class="gobackbtn consultinq" id="consultinqback"><span class="arrow">&#8592;</span> Geri</button>
+      <div class="premium-subtitle d-flex align-items-center justify-content-between">
+        <h2 class="premium-heading consultinq" id="consultinqhead">Konsultasiya mərkəzi</h2>
+      </div>
+    </div>
+
+    <div class="cards-grid py-4 pb-5" id="consultingcontainer">
+      <a class="card-3d" href="/consultingservice/ferqlisistem.html">
+        <div class="img-3d-wrapper">
+          <img src="/3dimages/1 (2).png" alt="Fərqli sistemlərin inteqrasiyası 3D icon" class="img-3d" />
+        </div>
+        <h3>Fərqli sistemlərin inteqrasiyası</h3>
+      </a>
+
+      <a class="card-3d" href="/consultingservice/verilenlerbazasi.html">
+        <div class="img-3d-wrapper">
+          <img src="/3dimages/2 (2).png" alt="VB-nin idarə edilməsi üzrə konsaltinq və dəstək xidmətləri 3D icon" class="img-3d" />
+        </div>
+        <h3>VB-nin idarə edilməsi</h3>
+      </a>
+
+      <a class="card-3d" href="/consultingservice/dataanalitik.html">
+        <div class="img-3d-wrapper">
+          <img src="/3dimages/3 (2).png" alt="Data Analytics 3D icon" class="img-3d" />
+        </div>
+        <h3>Data Analytics</h3>
+      </a>
+
+      <a class="card-3d" href="/consultingservice/ittelimleri.html">
+        <div class="img-3d-wrapper">
+          <img src="/3dimages/4 (2).png" alt="İT təlimləri 3D icon" class="img-3d" />
+        </div>
+        <h3>İT təlimləri</h3>
+      </a>
+    </div>
+
+    <!-- Our news -->
+    <div class="container" id="newsheadercontainer" style="display: none">
+      <button class="gobackbtn news" id="newsback"><span class="arrow">&#8592;</span> Geri</button>
+      <div class="premium-subtitle d-flex align-items-center justify-content-between">
+        <h2 class="premium-heading news">Xəbərlər</h2>
+        
+      </div>
+    </div>
+
+    <section class="news-container" id="newscontainer">
+      <!-- Card 1 -->
+      <div class="news-card">
+        <div class="card-image">
+          <img src="/news/foto1.jpg" alt="Innovation Meetup" />
+        </div>
+
+        <div class="card-content">
+          <h2>"PASHA Holding" MMC ilə əməkdaşlıq</h2>
+          <p>
+            16 iyul 2023-cü il SQL.az-ın "PASHA Holding" MMC ilə əməkdaşlığı çərçivəsində, holdingin bankçılıq və sığorta sektorlarının şirkətlərinin audit komandasına keçirilmiş iki aylıq SQL təlimindən sonra mükafatlandırma tədbiri təşkil olunmuşdur.
+          </p>
+        </div>
+
+        <!-- Hover Overlay from Bottom to Top -->
+        <div class="card-hover">
+          <h3>"PASHA Holding" MMC ilə əməkdaşlıq</h3>
+          <p>
+            Bu kurs müddəti ərzində iştirakçılar yüksək performans göstərərək əla nəticələr əldə etdilər. Dürüstlük, keyfiyyət, gəlirlilik, əməkdaşlıq və sahibkarlıq üzərində qurulmuş "PASHA Holding"
+            MMC ilə əməkdaşlıq etməkdən qürur duyuruq və bizi bu təlimin keçirilməsində seçdikləri üçün öz təşəkkürümüzü bildiririk!
+          </p>
+          <a class="hover-btn" href="./newsdetails/pashaholdingnews.html">Ətraflı</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="news-card">
+        <div class="card-image">
+          <img src="/news/standard-quality-control-concept-m-min.jpg" alt="Fall Orientation Week" />
+        </div>
+
+        <div class="card-content">
+          <h2>Data İnteqrasiya XİDMƏTLƏRİMİZinin yazılması və tətbiqi</h2>
+          <p>
+            Müştərilərimiz üçün Data İnteqrasiya XİDMƏTLƏRİMİZinin yazılması və tətbiqini uğurla bitmiş bir layihə kimi öz portfoliomuza daxil etdik. Bu layihə müştərilərimizin tələblərinin
+            aydınlaşdırılması...
+          </p>
+        </div>
+
+        <div class="card-hover">
+          <h3>Data İnteqrasiya XİDMƏTLƏRİMİZinin yazılması və tətbiqi</h3>
+          <p>
+            Hər mərhələdə müştərilərimizin spesifik ehtiyaclarına yaxınlaşaraq onların layihələrinin müvafiq sahələrdə effektiv şəkildə işlənməsini təmin etmək üçün çalışmışıq. Bu layihə, müştəri
+            memnuniyyətinin əldə edilməsində əhəmiyyətli bir rol oynamış və bizə data inteqrasiyası sahəsindəki keyfiyyətli xidmətimizi təmin etməkdə mükəmməl nəticələr vermişdir.
+          </p>
+          <a class="hover-btn" href="./newsdetails/dataintegrationnews.html">Ətraflı</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="news-card">
+        <div class="card-image">
+          <img src="/news/foto2.jpg" alt="Volunteering Day" />
+        </div>
+
+        <div class="card-content">
+          <h2>İlk SQL üzrə Azərbaycan dilində kitab</h2>
+          <p>
+            2023-cü ildə nəşr olunan SQL “Asan Yanaşma Yolu” 3-cü nəşr kitabı müasir verilənlər bazası idarə edilməsi və sorğuların aparılması sahəsində əhatəli resursdur və məqsədi oxuculara əsas və
+            qabaqcıl biliklər vermək...
+          </p>
+        </div>
+
+        <div class="card-hover">
+          <h3>İlk SQL üzrə Azərbaycan dilində kitab</h3>
+          <p>
+            2023-cü ildə nəşr olunan SQL “Asan Yanaşma Yolu” 3-cü nəşr kitabı müasir verilənlər bazası idarə edilməsi və sorğuların aparılması sahəsində əhatəli resursdur və məqsədi oxuculara əsas və
+            qabaqcıl biliklər vermək, onların biliklərini artırmaq və bacarıqlarını təkmilləşdirməkdir.
+          </p>
+          <a class="hover-btn" href="./newsdetails/firstsqlbooknews.html">Ətraflı</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- form section -->
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="left-contact">
+          <div class="brand-area">
+            <a href="/">
+              <img src="/sql/icon/logo.png" alt="SQL Logo" />
+            </a>
+            <div class="brand-text">
+              <h1>IT CONSULTING</h1>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <div class="info-block"><span>Phone:</span><a href="tel:+994559409565">+994 55 940 95 65</a></div>
+            <div class="info-block" style="width: 170px; margin-right: 27px"><span>Email:</span> info@sql.az</div>
+          </div>
+
+          <div class="nav-grid">
+            <a href="/#detailsContainer" id="detailcontainerbtn1">Ümumi məlumat</a>
+            <a href="/#detailsContainer2" id="detailcontainerbtn2">Xidmətlərimiz</a>
+            <a href="/#carousellogos">Partnyorlar</a>
+            <a href="/#detailsContainer2">Xəbərlər</a>
+            <a href="/#detailsContainer2" id="detailcontainerbtn3">Kitablar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="scroll-to-top" id="scrollToTop">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 4l-6 6h4v6h4v-6h4l-6-6z" />
+      </svg>
+    </div>
+
+    <a href="https://wa.me/+994559409565?text=Salam kursla bağlı məlumat almaq istəyərdim." target="_blank" class="whatsapp-float" rel="noopener noreferrer">
+      <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+    <!-- Footer -->
+    <footer class="bg-white text-white text-center pt-3">
+      <p>© 2025 SQL.AZ Konsultinq şirkəti. Bütün hüquqlar qorunur.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {});
+    </script>
+    <script src="/app.js"></script>
+  </body>
+</html>
